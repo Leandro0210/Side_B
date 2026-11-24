@@ -19,6 +19,7 @@ import pandas as pd
 from side_b_dashboard_core import (
     GROUPS, GROUP_LABELS, POLICIES, REPRESENTATIONS, SideBEngine
 )
+from validar_integral_side_b import run_audit, markdown_report
 
 ROOT = Path(__file__).resolve().parent
 ENGINE = SideBEngine(ROOT)
@@ -194,8 +195,34 @@ def _compare(profile: str, left: str, right: str,representation_name: str, top_k
     return summary,_comparison_figure(m),explanation,m,detail
 
 
+def _evaluation_note(real: pd.DataFrame, simulated: pd.DataFrame) -> str:
+    """No atribuir evaluaciones individuales a archivos que no se publican."""
+    if real.empty and simulated.empty:
+        return ("**Privacidad:** este repositorio público no contiene resultados individuales "
+                "ni agregados de participantes. Si tienes una copia local autorizada de "
+                "los resúmenes, aparecerán aquí al cargarlos en sus carpetas originales. "
+                "No se inventan puntuaciones para rellenar las tablas.")
+    notes = []
+    if real.empty:
+        notes.append("**Evaluación real:** sin resumen local disponible; no se puede concluir preferencia humana.")
+    else:
+        notes.append("**Evaluación real:** resumen local disponible; muestra pequeña, "
+                     "no permite generalizar.")
+    if simulated.empty:
+        notes.append("**Simulación:** resumen sintético no distribuido públicamente.")
+    else:
+        notes.append("**SIMULADO:** resultados ficticios para probar el software; "
+                     "no son oyentes reales.")
+    return "\n\n".join(notes)
+
+
 def _eval_tables():
-    return ENGINE.evaluation(False),ENGINE.evaluation(True)
+    real, simulated = ENGINE.evaluation(False), ENGINE.evaluation(True)
+    return real, simulated, _evaluation_note(real, simulated)
+
+
+def _integral_diagnostic():
+    return markdown_report(run_audit(ROOT))
 
 
 def _eligible_dropdown(profile: str, representation_name: str, policy: str):
@@ -320,12 +347,20 @@ def create_app():
                             "**Qué NO significa:** que el modelo C sea definitivamente justo o que los oyentes lo prefieran. "
                             "Los perfiles son categorías musicales, no personas reales.")
                 with gr.Accordion("Evaluación humana y simulación",open=False):
-                    gr.Markdown("**No mezclar fuentes:** P01 contiene respuestas de una persona. P02–P05 son cuatro conjuntos **sintéticos**, creados solo para probar el software.")
+                    gr.Markdown("**No mezclar fuentes:** el análisis local previo incluyó una evaluación real de P01 y una simulación de P02–P05. **Sus archivos individuales no se publican** en GitHub.")
+                    evaluation_state=gr.Markdown(value=_evaluation_note(ENGINE.evaluation(False), ENGINE.evaluation(True)))
                     with gr.Row():
                         real=gr.Dataframe(label="Datos humanos reales · P01",value=ENGINE.evaluation(False),interactive=False)
                         simulated=gr.Dataframe(label="Simulación · NO son personas",value=ENGINE.evaluation(True),interactive=False)
-                    gr.Button("Actualizar resultados").click(_eval_tables,outputs=[real,simulated])
+                    gr.Button("Actualizar resultados").click(_eval_tables,outputs=[real,simulated,evaluation_state])
                     gr.Markdown("Una sola persona no permite afirmar que un algoritmo es mejor. Las puntuaciones simuladas jamás se deben usar como evidencia académica.")
+                with gr.Accordion("Validación integral reproducible · v0.6",open=False):
+                    gr.Markdown("Ejecuta las verificaciones técnicas **sin modificar el dataset**. "
+                                "El resultado distingue los controles comprobados de los "
+                                "aspectos éticos que siguen pendientes. No certifica justicia ni autoriza despliegue público.")
+                    integral_button=gr.Button("Comprobar SIDE B",variant="secondary")
+                    integral_result=gr.Markdown()
+                    integral_button.click(_integral_diagnostic,outputs=integral_result)
                 with gr.Accordion("Supervisión humana (demostración)",open=False):
                     gr.Markdown("**Demostración local, no despliegue público.** Las acciones requieren una clave configurada en `SIDEB_REVIEW_TOKEN` antes de iniciar la app. Sin ella, el panel queda en **solo lectura**. La clave no se guarda en los CSV. Las decisiones no alteran los resultados científicos.")
                     with gr.Row():
