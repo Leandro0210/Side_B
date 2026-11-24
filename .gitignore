@@ -24,3 +24,6 @@ data/dataset_v1/unselected_recordings.csv
 
 # Salidas locales del diagnóstico v0.6
 resultados_validacion/
+
+# Informes regenerables de revisión de riesgos
+resultados_riesgos/

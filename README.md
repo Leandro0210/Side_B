@@ -91,3 +91,15 @@ Reproducir la revisión sin alterar el dataset:
 ```
 
 El panel incluye los casos pendientes dentro de **Auditoría ética → Calidad del catálogo**. Consulta [la metodología y limitaciones](docs/informes/CALIDAD_CATALOGO_V09.md) antes de interpretar las canciones: los metadatos no sustituyen una escucha humana ni demuestran correspondencia de género.
+
+
+## Riesgos éticos y mitigaciones (v0.10)
+
+Se documentaron **11 riesgos** con prioridad cualitativa, responsables por rol, comprobaciones técnicas y tareas pendientes.
+Desde Gradio abre **Auditoría ética → Privacidad, riesgos y límites** y pulsa **Verificar controles y tareas pendientes** para consultar el diagnóstico sin saturar la pantalla principal.
+
+```powershell
+.\.venv\Scripts\python.exe side_b_risk_register.py --out resultados_riesgos
+```
+
+El informe reproducible y la decisión de **no desplegar públicamente** están en [`docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md`](docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md). Ningún riesgo se considera eliminado automáticamente; se necesita evidencia humana y una revisión de gobernanza para reevaluar el despliegue. El paper sigue reservado para la etapa final.
