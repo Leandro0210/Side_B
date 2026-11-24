@@ -124,6 +124,10 @@ def analyze(args):
     for file in files:
         rows = read_csv(file)
         if not rows: continue
+        # Los formularios de campo no admiten marcadores editoriales de procedencia.
+        # Obliga a revisar fuera del estudio cualquier lote reutilizado para pruebas.
+        if any((r.get('notes') or '').lstrip().startswith('[') for r in rows):
+            raise ValueError(f'{file.name}: notas con marcador de procedencia; revisar el origen de la hoja')
         pid = file.stem.upper()
         groups = defaultdict(list)
         for r in rows:
