@@ -36,13 +36,12 @@ class TestIntegralAudit(unittest.TestCase):
             with self.assertRaisesRegex(AssertionError,"MODIFICADO"):
                 _integrity(ROOT)
 
-    def test_published_release_has_no_personal_ratings(self):
-        # El checkout público no lleva los agregados; los CSV individuales son privados.
-        if not (ROOT / "simulacion" / "validacion_humana").exists():
-            status, note = _human_evidence(ROOT)
-            self.assertEqual(status, "PENDIENTE")
-            self.assertIn("no se deducen resultados",note)
-        self.assertNotIn("rating_1_5", '\n'.join(x["detail"] for x in self.report["checks"]))
+    def test_published_aggregate_has_nine_reports_but_no_paired_ratings(self):
+        status, note = _human_evidence(ROOT)
+        self.assertEqual(status, "PENDIENTE")
+        self.assertIn("9 relatos",note)
+        self.assertIn("consentimientos",note)
+        self.assertFalse(self.report["human_preference_validated"])
 
     def test_known_publication_paths_are_checked(self):
         class GitResult:

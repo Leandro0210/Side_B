@@ -60,14 +60,11 @@ class TestDashboardEngine(unittest.TestCase):
             self.assertEqual(len(engine.audit_records()),2)
         self.assertEqual(self.engine.dataset_path.read_bytes(),before)
 
-    def test_simulated_and_real_separate(self):
-        real=self.engine.evaluation(False);sim=self.engine.evaluation(True)
-        if real.empty or sim.empty:
-            self.skipTest("Las valoraciones privadas no deben distribuirse en GitHub")
-        self.assertEqual(set(real.complete_participants),{1})
-        self.assertEqual(set(sim.complete_participants),{4})
-        self.assertNotEqual(real.loc[real.profile=='pop','mean_A'].iloc[0],
-                            sim.loc[sim.profile=='pop','mean_A'].iloc[0])
+    def test_local_human_evaluation_optional(self):
+        real = self.engine.evaluation()
+        self.assertIsNotNone(real)
+        if not real.empty:
+            self.assertIn('complete_participants', real.columns)
 
     def test_comparison_same_eligible_pool(self):
         p=list(POLICIES)

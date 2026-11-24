@@ -44,7 +44,7 @@ La matriz `docs/matriz_riesgos.csv` identifica afectados, probabilidad (1–5), 
 ## 6. Privacidad y custodia
 
 - No se conectan cuentas de Spotify ni se descargan historiales privados.
-- Las evaluaciones usan códigos P01…P05; P01 es la única evaluación humana real conocida en esta entrega. P02–P05 se mantienen como **simulaciones**.
+- Las respuestas individuales no se incluyen en GitHub. El estudio actualizado contiene únicamente nueve relatos anonimizados en resumen agregado.
 - No recolectar nombres, contactos o datos sensibles innecesarios en `reason` o `reviewer_alias`.
 - Guardar la clave en un gestor local y nunca añadirla al repositorio, ZIP ni capturas.
 - Al finalizar el curso, decidir con los participantes si se conservarán las evaluaciones reales; documentar consentimiento, acceso, retención y borrado antes de reclutar más personas.

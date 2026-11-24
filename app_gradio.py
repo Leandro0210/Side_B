@@ -20,7 +20,6 @@ from side_b_dashboard_core import (
     GROUPS, GROUP_LABELS, POLICIES, REPRESENTATIONS, SideBEngine
 )
 from validar_integral_side_b import run_audit, markdown_report
-from simular_participantes import summary_tables as synthetic_demo_tables
 
 ROOT = Path(__file__).resolve().parent
 ENGINE = SideBEngine(ROOT)
@@ -196,40 +195,30 @@ def _compare(profile: str, left: str, right: str,representation_name: str, top_k
     return summary,_comparison_figure(m),explanation,m,detail
 
 
-def _evaluation_note(real: pd.DataFrame, simulated: pd.DataFrame) -> str:
-    """No atribuir evaluaciones individuales a archivos que no se publican."""
-    if real.empty and simulated.empty:
-        return ("**Privacidad:** este repositorio público no contiene resultados individuales "
-                "ni agregados de participantes. Si tienes una copia local autorizada de "
-                "los resúmenes, aparecerán aquí al cargarlos en sus carpetas originales. "
-                "No se inventan puntuaciones para rellenar las tablas.")
-    notes = []
+def _evaluation_note(real: pd.DataFrame) -> str:
+    """Solo mostrar evidencia individual cuando está disponible localmente."""
     if real.empty:
-        notes.append("**Evaluación real:** sin resumen local disponible; no se puede concluir preferencia humana.")
-    else:
-        notes.append("**Evaluación real:** resumen local disponible; muestra pequeña, "
-                     "no permite generalizar.")
-    if simulated.empty:
-        notes.append("**Simulación:** resumen sintético no distribuido públicamente.")
-    else:
-        notes.append("**SIMULADO:** resultados ficticios para probar el software; "
-                     "no son oyentes reales.")
-    return "\n\n".join(notes)
+        return ("**Calificaciones por canción:** no hay un resumen local autorizado. "
+                "Los nueve relatos cualitativos se muestran agrupados abajo, pero "
+                "no permiten comparar numéricamente la relevancia de los modelos A/C.")
+    return ("**Calificaciones por canción:** se encontró un resumen local de formularios completos. "
+            "Considéralo por separado de los relatos cualitativos y revisa consentimiento "
+            "y trazabilidad antes de usarlo como evidencia de investigación.")
 
 
 def _eval_tables():
-    real, simulated = ENGINE.evaluation(False), ENGINE.evaluation(True)
-    return real, simulated, _evaluation_note(real, simulated)
+    real = ENGINE.evaluation()
+    return real, _evaluation_note(real)
 
 
-def _synthetic_named_demo():
-    """Genera la demostración sin tocar los archivos de evaluaciones humanas."""
-    detail, aggregate = synthetic_demo_tables()
-    note = ("**SIMULADO — 5 personajes con nombres inventados, 0 personas encuestadas.** "
-            "Las puntuaciones se generaron por código sobre pop y rock. "
-            "No indican escucha real, satisfacción ni preferencia humana. "
-            "Para exportar CSV locales sintéticos: `python simular_participantes.py`.")
-    return detail, aggregate, note
+def _study_summary() -> pd.DataFrame:
+    path = ROOT / "data" / "estudio_v08" / "resumen_grupal.csv"
+    table = pd.read_csv(path, sep=";")
+    if table["participantes"].sum() != 9 or len(table) != 5:
+        raise ValueError("El resumen agregado de nueve relatos no coincide con su manifiesto")
+    return table.rename(columns={"grupo_interpretativo":"Patrón de recepción",
+                                 "participantes":"Relatos",
+                                 "descripcion":"Qué expresaron"})
 
 
 def _integral_diagnostic():
@@ -357,23 +346,19 @@ def create_app():
                 gr.Markdown("**Qué significa:** al reducir el peso de popularidad cambió la exposición en esta muestra. "
                             "**Qué NO significa:** que el modelo C sea definitivamente justo o que los oyentes lo prefieran. "
                             "Los perfiles son categorías musicales, no personas reales.")
-                with gr.Accordion("Evaluación humana y simulación",open=False):
-                    gr.Markdown("**No mezclar fuentes:** el análisis local previo incluyó una evaluación real de P01 y una simulación de P02–P05. **Sus archivos individuales no se publican** en GitHub.")
-                    evaluation_state=gr.Markdown(value=_evaluation_note(ENGINE.evaluation(False), ENGINE.evaluation(True)))
-                    with gr.Row():
-                        real=gr.Dataframe(label="Datos humanos reales · P01",value=ENGINE.evaluation(False),interactive=False)
-                        simulated=gr.Dataframe(label="Simulación · NO son personas",value=ENGINE.evaluation(True),interactive=False)
-                    gr.Button("Actualizar resultados").click(_eval_tables,outputs=[real,simulated,evaluation_state])
-                    with gr.Accordion("Probar con 5 personajes ficticios (simulación)",open=False):
-                        gr.Markdown("**DEMOSTRACIÓN SINTÉTICA — no son personas encuestadas.** "
-                                    "Nombres inventados, valoraciones automáticas diferentes y mismo catálogo A/C. "
-                                    "No se guarda ninguna respuesta humana ni se modifica el dataset.")
-                        synth_btn=gr.Button("Simular ahora",variant="secondary")
-                        synth_note=gr.Markdown()
-                        synth_people=gr.Dataframe(label="Personajes y puntuaciones inventadas · NO HUMANOS",interactive=False)
-                        synth_means=gr.Dataframe(label="Resumen generado automáticamente · SIMULADO",interactive=False)
-                        synth_btn.click(_synthetic_named_demo,outputs=[synth_people,synth_means,synth_note])
-                    gr.Markdown("Una sola persona no permite afirmar que un algoritmo es mejor. Las puntuaciones simuladas jamás se deben usar como evidencia académica.")
+                with gr.Accordion("Estudio exploratorio de participantes",open=False):
+                    gr.Markdown("**9 relatos recibidos:** resumen temático anónimo de preferencias "
+                                "transmitidas por el responsable del proyecto. "
+                                "No hay 28 calificaciones verificadas por persona ni se dispone de "
+                                "consentimientos documentados en este repositorio.")
+                    gr.Dataframe(label="Resumen cualitativo agregado · 9 relatos",value=_study_summary(),interactive=False)
+                    gr.Markdown("**Interpretación:** hay diferencias de afinidad por género y por idioma; "
+                                "la muestra no permite generalizar ni calcular una preferencia cuantitativa A/C. "
+                                "Metodología: `docs/informes/ESTUDIO_EXPLORATORIO_V08.md`.")
+                    with gr.Accordion("Calificaciones por canción (solo archivo local autorizado)",open=False):
+                        evaluation_state=gr.Markdown(value=_evaluation_note(ENGINE.evaluation()))
+                        real=gr.Dataframe(label="Agregados de formularios completos",value=ENGINE.evaluation(),interactive=False)
+                        gr.Button("Actualizar calificaciones locales").click(_eval_tables,outputs=[real,evaluation_state])
                 with gr.Accordion("Validación integral reproducible · v0.6",open=False):
                     gr.Markdown("Ejecuta las verificaciones técnicas **sin modificar el dataset**. "
                                 "El resultado distingue los controles comprobados de los "
@@ -422,14 +407,14 @@ def create_app():
                     robust_table=gr.Dataframe(interactive=False)
                     robust_btn.click(_robustness,[robust_genre,robust_repr],robust_table)
                     gr.Markdown("Las etiquetas de las grabaciones faltan a menudo y se usan las de artista como respaldo. "
-                                "En el perfil latino puede haber solo nueve candidatos; no creamos recomendaciones ficticias.")
+                                "En el perfil latino puede haber solo nueve candidatos; no agregamos recomendaciones inexistentes.")
                 with gr.Accordion("Privacidad, riesgos y límites del proyecto",open=False):
                     gr.Markdown("""**Controles activos en la demostración:**
 - Sin cuentas de streaming ni historiales privados; la app escucha únicamente en `127.0.0.1`.
 - Las decisiones humanas requieren una clave local (no hay autenticación de usuarios multirol).
 - Cada acción exige alias, decisión y justificación; el registro se firma con una cadena HMAC y se comprueba antes de usar bloqueos.
 - Entradas y perfiles se validan en el servidor; no se alteran el dataset ni los CSV de experimentos.
-- La evaluación de P01 (real) y P02–P05 (simulada) permanece separada.
+- Las respuestas individuales no se publican; solo se muestran tendencias agregadas de nueve relatos indirectos.
 
 **Límites:** una clave compartida no ofrece identidades verificadas ni protección frente a alguien con acceso completo a la computadora y la clave. La cadena detecta cambios intermedios, pero no garantiza detectar que alguien borró el archivo completo o su tramo final. No desplegar públicamente sin autenticación real, respaldos y controles de acceso.
 
@@ -437,7 +422,7 @@ def create_app():
                     gr.Markdown("**Matriz de riesgos y responsabilidades (prioridades iniciales)**")
                     gr.Markdown("**Privacidad y explicaciones:** la app no solicita cuentas de streaming; los perfiles no se almacenan. "
                                 "El desglose del ranking puede verse en Descubrir música → ¿Por qué aparecen estos artistas? "
-                                "La evaluación humana real es privada y los datos sintéticos nunca cuentan como evidencia humana. "
+                                "Las respuestas individuales son privadas; los relatos cualitativos no equivalen a puntuaciones completas por canción. "
                                 "Consulta `docs/PRIVACIDAD_EXPLICABILIDAD.md` antes de compartir o publicar resultados.")
                     gr.Dataframe(value=_risk_table(),label="Riesgos de SIDE B",interactive=False)
                     gr.Markdown("La probabilidad y el impacto son estimaciones cualitativas del equipo, **no** frecuencias medidas. Ver `docs/informes/CONTROLES_ETICOS_SEGURIDAD.md` y las pruebas automatizadas.")

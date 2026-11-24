@@ -173,17 +173,19 @@ def _release_surface(root: Path) -> tuple[str, str]:
 
 
 def _human_evidence(root: Path) -> tuple[str, str]:
+    """Verificar relatos agregados sin confundirlos con mediciones por canción."""
+    grouped = root / "data" / "estudio_v08" / "resumen_grupal.csv"
+    if not grouped.exists():
+        return "PENDIENTE", "No hay resumen de relatos disponible; no se deducen resultados humanos"
+    data = pd.read_csv(grouped, sep=";")
+    assert set(data.columns) == {"grupo_interpretativo", "participantes", "descripcion"}
+    assert len(data) == 5 and int(data.participantes.sum()) == 9
     real = root / "data" / "validacion_humana_v0_3" / "analysis" / "summary_by_profile.csv"
-    fake = root / "simulacion" / "validacion_humana" / "analysis" / "summary_by_profile.csv"
-    if not real.exists() and not fake.exists():
-        return "PENDIENTE", "Los agregados privados no están en GitHub; no se deducen resultados humanos ni sintéticos"
-    if real.exists() and fake.exists():
-        df_real = pd.read_csv(real, sep=";")
-        df_fake = pd.read_csv(fake, sep=";")
-        assert "complete_participants" in df_real and "complete_participants" in df_fake
-        return "PENDIENTE", (f"Fuentes separadas: evaluación real n={int(df_real.complete_participants.max())}, "
-                              f"simulada n={int(df_fake.complete_participants.max())}; falta ampliación humana real")
-    return "PENDIENTE", "Solo existe uno de los resúmenes: no mezclar ni inferir resultados de la fuente ausente"
+    detail = ("9 relatos indirectos agrupados, sin datos identificativos; "
+              "aún faltan consentimientos documentados y notas individuales por candidato")
+    if real.exists():
+        return "PENDIENTE", detail + "; existe un resumen local adicional que debe revisarse separadamente"
+    return "PENDIENTE", detail + "; no se calculan preferencias pareadas A/C"
 
 
 def run_audit(root: Path = ROOT) -> dict:

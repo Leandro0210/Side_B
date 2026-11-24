@@ -42,6 +42,6 @@ Estas proporciones describen **exposición entre los puestos del ranking** y no 
 - **Uso real o despliegue público:** **NO APROBADO**. Faltan autenticación y autorización multiusuario, cifrado y política de retención verificable, recuperación ante eliminación/truncamiento del registro, revisión de seguridad, consentimiento y más participantes reales.
 - El HMAC de eventos detecta alteraciones del contenido existentes, pero no prueba por sí solo que un archivo no fue borrado o truncado hasta un prefijo válido. Requiere anclaje, respaldo externo y custodia de claves.
 - El nombre de una grabación ilustrativa puede ser no musical (p. ej., intervalo en directo); se requiere revisión del catálogo antes de mostrarla como canción.
-- No publicar formularios P01–P05 ni claves de asignación. Los registros de evaluaciones sintéticas se mantienen separados y **no constituyen personas encuestadas**.
+- No publicar formularios individuales ni claves de asignación. Los nueve relatos recibidos son cualitativos e indirectos: no permiten inferir preferencias cuantitativas A/C.
 
 **Siguiente evidencia humana:** invitar participantes voluntarios con consentimiento, mostrar grabaciones comprobadas y registrar la valoración real de forma seudonimizada; documentar limitaciones de muestra y análisis. El informe en formato paper se redactará al final con la plantilla de la asignatura.

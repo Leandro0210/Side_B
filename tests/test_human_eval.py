@@ -23,7 +23,7 @@ class TestHumanEval(unittest.TestCase):
             p=Path(tmp)/'ratings'/'P01.csv'
             h.write_csv(p,h.RATING_FIELDS,[dict.fromkeys(h.RATING_FIELDS,'')])
             self.assertEqual(h.read_csv(p)[0]['relevance_1_5'],'')
-    def test_synthetic_detected_in_real_mode(self):
+    def test_rejects_editorial_provenance_markers(self):
         from types import SimpleNamespace
         with tempfile.TemporaryDirectory() as tmp:
             out=Path(tmp)
@@ -32,11 +32,9 @@ class TestHumanEval(unittest.TestCase):
                  'example_track':'track','popularity_group':'low_observed','A_position':1,'C_position':1}])
             h.write_csv(out/'ratings'/'P02.csv',h.RATING_FIELDS,[
                 {'participant_id':'P02','profile':'pop','item_id':'SB01','relevance_1_5':'3',
-                 'notes':'[SIMULADO] prueba'}])
-            with self.assertRaisesRegex(ValueError,'sintéticas'):
-                h.analyze(SimpleNamespace(out=str(out),simulated=False))
-            h.analyze(SimpleNamespace(out=str(out),simulated=True))
-            self.assertTrue((out/'analysis'/'SIMULADO_NO_EVIDENCIA_HUMANA.txt').exists())
+                 'notes':'[ETIQUETA] valor de demostracion'}])
+            with self.assertRaisesRegex(ValueError,'procedencia'):
+                h.analyze(SimpleNamespace(out=str(out)))
 
     def test_blank_notes_are_allowed_in_real_mode(self):
         from types import SimpleNamespace

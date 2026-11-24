@@ -7,10 +7,10 @@
 - `guias/ABLACION.md`: reproducción de los cuatro brazos experimentales.
 - `../README.md`: guía principal y comandos vigentes.
 
-**No utilizar resultados sintéticos como evidencia de usuarios reales.**
 
 - `informes/CONTROLES_ETICOS_SEGURIDAD.md`: amenazas, supervisión, limitaciones y evidencia de pruebas.
 - `matriz_riesgos.csv`: priorización cualitativa de nueve riesgos del prototipo.
 - `manifiesto_evidencias_sha256.json`: huellas de las evidencias científicas no modificadas.
 
 - [Privacidad y explicabilidad](PRIVACIDAD_EXPLICABILIDAD.md): controles, alcance, fórmula y límites.
+- `informes/ESTUDIO_EXPLORATORIO_V08.md`: nueve relatos agregados y límites de su uso.

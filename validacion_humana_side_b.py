@@ -119,19 +119,15 @@ def analyze(args):
     per_person = []
     valid_scores = {}
     files = sorted((out/'ratings').glob('*.csv'))
-    simulated_mode = getattr(args, 'simulated', False)
     if not files:
         print('Aún no hay archivos de valoración.'); return
     for file in files:
         rows = read_csv(file)
         if not rows: continue
-        synthetic_flags = [(r.get('notes') or '').strip().startswith('[SIMULADO]') for r in rows]
-        if any(synthetic_flags) and not all(synthetic_flags):
-            raise ValueError(f'{file.name}: mezcla de filas simuladas y no simuladas')
-        if any(synthetic_flags) and not simulated_mode:
-            raise ValueError(f'{file.name}: respuestas sintéticas detectadas. No analizarlas como humanas. Usa --simulated en una carpeta de simulación separada.')
-        if simulated_mode and not all(synthetic_flags):
-            raise ValueError(f'{file.name}: modo --simulated exige que todas las filas se identifiquen como [SIMULADO]')
+        # Los formularios de campo no admiten marcadores editoriales de procedencia.
+        # Obliga a revisar fuera del estudio cualquier lote reutilizado para pruebas.
+        if any((r.get('notes') or '').lstrip().startswith('[') for r in rows):
+            raise ValueError(f'{file.name}: notas con marcador de procedencia; revisar el origen de la hoja')
         pid = file.stem.upper()
         groups = defaultdict(list)
         for r in rows:
@@ -178,9 +174,6 @@ def analyze(args):
                            'mean_paired_difference_C_minus_A':round(avg('C_minus_A'),4)})
     write_csv(out/'analysis'/'summary_by_profile.csv',
               ['profile','complete_participants','mean_A','mean_C','mean_paired_difference_C_minus_A'],aggregates)
-    if simulated_mode:
-        (out/'analysis'/'SIMULADO_NO_EVIDENCIA_HUMANA.txt').write_text('RESULTADOS SINTÉTICOS DE PRUEBA. NO SON VALORACIONES DE SERES HUMANOS. NO UTILIZAR COMO EVIDENCIA EMPÍRICA.\n',encoding='utf-8')
-        print('*** SIMULACIÓN: las puntuaciones son inventadas para probar el pipeline, NO son resultados humanos. ***')
     print(f'Valoraciones completas: {len(per_person)} combinaciones persona-perfil.')
     print(f'Resumen: {out / "analysis" / "summary_by_profile.csv"}')
     if not per_person: print('Todavía no hay calificaciones completas; NO hay resultado empírico humano.')
@@ -202,7 +195,6 @@ def main():
     p.add_argument('--overwrite',action='store_true',help='Reemplazar hoja existente sin preservar valoraciones')
     q = sub.add_parser('analyze',help='Analizar formularios ya completados')
     q.add_argument('--out',default=r'data/validacion_humana_v0_3')
-    q.add_argument('--simulated',action='store_true',help='Habilita exclusivamente evaluación de datos rotulados [SIMULADO]')
     args = parser.parse_args()
     if args.command=='prepare':prepare(args)
     else:analyze(args)
