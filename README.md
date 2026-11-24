@@ -16,7 +16,7 @@ py -m venv .venv
 
 Abre `http://127.0.0.1:7860` si el navegador no se abre automáticamente. Para cerrar el programa, vuelve a PowerShell y pulsa **Ctrl+C**. Es una aplicación local; **no se comparte en internet**.
 
-Si ya tienes SIDE B con Gradio y las dependencias instaladas, solo debes **detenerlo y reemplazar `app_gradio.py`** por el nuevo archivo. No es necesario volver a crear `.venv` ni descargar los datos.
+Si ya tienes SIDE B con GitHub y las dependencias instaladas, detén Gradio y actualiza tu copia local de `master` con `git pull`. Esta etapa incorpora archivos adicionales a `app_gradio.py`; no basta con reemplazar solo la interfaz. No necesitas recrear `.venv`.
 
 ## Navegación nueva (tres pestañas)
 
@@ -29,7 +29,7 @@ Los parámetros avanzados —políticas B/D, representación con etiqueta de mue
 ## Qué mide y qué no mide
 
 - Catálogo fijo: **576 grabaciones / 72 artistas** de MusicBrainz, con indicadores de popularidad observada en ListenBrainz.
-- El algoritmo recomienda **artistas**, y muestra una grabación **ilustrativa** de cada uno. **No reproduce audio** ni verifica automáticamente si esa grabación se puede escuchar.
+- El algoritmo recomienda **artistas**, y muestra una grabación **ilustrativa** de cada uno. **No reproduce audio** ni verifica automáticamente si esa grabación se puede escuchar. Desde v0.9, elige una alternativa del mismo artista cuando el registro histórico es claramente una introducción, anuncio, *skit* o fragmento no apto; si no hay alternativa, muestra «sin canción ilustrativa».
 - A: 25 % de peso de popularidad; C: 5 %. Los otros modelos B/D añaden una restricción de exposición por grupo.
 - Baja/media/alta significan **terciles de oyentes de esta muestra**. No indican qué artistas son emergentes ni equivalen a grupos protegidos.
 - La similitud se calcula con etiquetas musicales, **no** con valoraciones verificadas de usuarios.
@@ -78,3 +78,16 @@ El diagnóstico comprueba SHA-256, reproduce **48 escenarios** de los cuatro mod
 **Estudio de recepción v0.8:** se recibieron nueve relatos de preferencias, publicados solo como cinco tendencias temáticas agregadas, sin nombres, datos personales ni notas individuales por canción. Los relatos son indirectos y no disponemos de consentimientos documentados, por lo que **no se calcula una mejora de relevancia A frente a C**. El diagnóstico conserva el estado de validación humana cuantitativa como **PENDIENTE**. El despliegue público **no está aprobado**.
 
 Resultados y límites: [`docs/informes/VALIDACION_INTEGRAL_V06.md`](docs/informes/VALIDACION_INTEGRAL_V06.md) y [`docs/informes/ESTUDIO_EXPLORATORIO_V08.md`](docs/informes/ESTUDIO_EXPLORATORIO_V08.md).
+
+
+## Control de calidad del catálogo (v0.9)
+
+SIDE B ya distingue el **artista recomendado** de su **grabación de ejemplo**. El nuevo control de metadatos identificó cinco ejemplos originales problemáticos; propone cuatro alternativas del mismo artista y deja uno sin canción visible en vez de enseñar un intervalo de concierto. Las recomendaciones A/B/C/D no cambian y las valoraciones históricas no se reinterpretan.
+
+Reproducir la revisión sin alterar el dataset:
+
+```powershell
+.\.venv\Scripts\python.exe side_b_catalog_quality.py --out data/catalogo_v09/revision_ilustraciones.csv
+```
+
+El panel incluye los casos pendientes dentro de **Auditoría ética → Calidad del catálogo**. Consulta [la metodología y limitaciones](docs/informes/CALIDAD_CATALOGO_V09.md) antes de interpretar las canciones: los metadatos no sustituyen una escucha humana ni demuestran correspondencia de género.

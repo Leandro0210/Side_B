@@ -37,3 +37,5 @@ Estos datos describen preferencias **reportadas verbalmente**. Las calificacione
 ## Uso en SIDE B
 
 El archivo `data/estudio_v08/resumen_grupal.csv` contiene los conteos agregados anteriores. Se muestra en el panel sin nombres ni datos personales. Los experimentos de exposición A/B/C/D permanecen independientes.
+
+**Nota v0.9:** se actualizó únicamente la presentación de ejemplos del catálogo. Los relatos previamente recibidos hacen referencia a las grabaciones históricas de la evaluación; no se cambian ni se recalculan puntuaciones con ejemplos sustituidos.

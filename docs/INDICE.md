@@ -14,3 +14,5 @@
 
 - [Privacidad y explicabilidad](PRIVACIDAD_EXPLICABILIDAD.md): controles, alcance, fórmula y límites.
 - `informes/ESTUDIO_EXPLORATORIO_V08.md`: nueve relatos agregados y límites de su uso.
+
+- `informes/CALIDAD_CATALOGO_V09.md`: revisión de canciones ilustrativas, cinco incidencias y límites de validación.

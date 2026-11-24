@@ -172,6 +172,29 @@ def _release_surface(root: Path) -> tuple[str, str]:
     return ("OK", f"Arranque 127.0.0.1 sin share; {len(tracked)} rutas versionadas sin directorios privados conocidos")
 
 
+def _illustration_quality(engine: SideBEngine) -> tuple[str, str]:
+    """Cuantifica alertas de metadatos sin presentarlas como escucha verificada."""
+    tab = engine.illustration_audit
+    if len(tab) != len(engine.catalog) or tab.artist_mbid.duplicated().any():
+        raise AssertionError("Fichas ilustrativas no coinciden con los artistas del experimento")
+    changed = tab.loc[tab.example_changed]
+    if any(changed.original_quality != "no_apta"):
+        raise AssertionError("Se cambiaron ejemplos que no estaban marcados como no aptos")
+    for row in tab.itertuples(index=False):
+        if row.display_quality == "sin_ejemplo":
+            assert not row.display_recording_mbid, "Sin ejemplo pero con identificador de grabación"
+            continue
+        matches = engine.tracks.loc[(engine.tracks.artist_mbid == row.artist_mbid) &
+                                    (engine.tracks.recording_mbid == row.display_recording_mbid)]
+        if len(matches) != 1:
+            raise AssertionError("El ejemplo elegido no pertenece al artista indicado")
+    unresolved = int((tab.display_quality == "sin_ejemplo").sum())
+    label = "PENDIENTE" if unresolved else "OK"
+    detail = (f"{len(tab)} artistas revisados; {len(changed)} ejemplos cambiados/no disponibles; "
+              f"{unresolved} sin canción ilustrativa; comprobación basada solo en metadatos")
+    return label, detail
+
+
 def _human_evidence(root: Path) -> tuple[str, str]:
     """Verificar relatos agregados sin confundirlos con mediciones por canción."""
     grouped = root / "data" / "estudio_v08" / "resumen_grupal.csv"
@@ -218,6 +241,12 @@ def run_audit(root: Path = ROOT) -> dict:
         _checks(report, "consistencia_ablacion", crosscheck)
     _checks(report, "supervision_hmac", lambda: _oversight(root))
     try:
+        status, detail = _illustration_quality(engine)
+        report["checks"].append({"id":"calidad_grabaciones_ilustrativas", "status":status, "detail":detail})
+    except (AssertionError, OSError, ValueError, KeyError) as exc:
+        report["checks"].append({"id":"calidad_grabaciones_ilustrativas", "status":"FALLA",
+                                 "detail":str(exc)})
+    try:
         status, detail = _release_surface(root)
         report["checks"].append({"id": "privacidad_publicacion", "status": status, "detail": detail})
     except (AssertionError, OSError, ValueError, TypeError) as exc:
@@ -249,6 +278,8 @@ def markdown_report(report: dict) -> str:
                 "no demuestra justicia normativa ni mayor satisfacción de oyentes.",
                 "**Decisión:** utilizable como demostración académica local si las comprobaciones técnicas pasan; "
                 "**NO** autorizado para despliegue público, ni validado con suficientes participantes reales.",
+                "**Calidad del catálogo:** las canciones ilustrativas se seleccionan por metadatos; "
+                "no hay verificación por escucha y al menos un artista requiere revisión editorial.",
                 "**Límites:** el HMAC no detecta por sí solo eliminación completa ni truncamiento del archivo; "
                 "las verificaciones de publicación no sustituyen auditoría de seguridad."])
     return "\n".join(out)
