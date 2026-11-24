@@ -1,7 +1,7 @@
 id,riesgo,afectados,probabilidad_1_5,impacto_1_5,prioridad_estimada,mitigacion,estado
 R01,Exposición concentrada en artistas populares,Artistas y oyentes,4,4,16,Ranking C y monitoreo por tercil,Implementada experimentalmente
 R02,Metadatos musicales incompletos,Oyentes y artistas,5,3,15,Marcadores de respaldo y aviso de limitaciones,Implementada parcialmente
-R03,Promover grabaciones no musicales,Oyentes,4,2,8,Advertencia en catálogo y revisión humana,Implementada parcialmente
+R03,Promover grabaciones no musicales,Oyentes,4,2,8,Filtro de metadatos y revisión humana,Control automático implementado; escucha pendiente
 R04,Manipulación de decisiones de supervisión,Auditor y desarrollador,3,4,12,Clave local y firmas HMAC por evento,Implementada en demo
 R05,Exposición de valoraciones reales,Participantes,3,4,12,Separación de datos y minimización de identificadores,Implementada parcialmente
 R06,Interpretación engañosa de simulaciones,Docente y audiencia,4,4,16,Etiquetas explícitas y salidas separadas,Implementada

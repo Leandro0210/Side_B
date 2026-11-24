@@ -7,7 +7,6 @@ from __future__ import annotations
 
 from html import escape
 from pathlib import Path
-import re
 
 import gradio as gr
 import matplotlib
@@ -67,10 +66,6 @@ def _policy_simple(label: str) -> str:
     return POL_A if label == "Priorizar artistas conocidos" else POL_C
 
 
-def _non_music(title: str) -> bool:
-    return bool(re.search(r"encore break|encore applause|\binterview\b|\bpromo\b|trailer|\[intro[.\] :]", str(title), re.I))
-
-
 def _exposure_figure(ranked: pd.DataFrame, pool: pd.DataFrame):
     fig, ax = plt.subplots(figsize=(7.2, 3.3), layout="constrained")
     if ranked.empty:
@@ -118,12 +113,16 @@ def _overall_figure():
 
 def _card_html(r: pd.Series) -> str:
     name=escape(str(r.artist_name))
-    title=escape(str(r.track_name))
+    audit=ENGINE.illustration(str(r.artist_mbid))
+    title=escape(str(audit["display_example"]))
     group=str(r.pop_group)
     g_label=GROUP_LABELS.get(group,"Sin grupo")
     g_cls={"low_observed":"sb-low","medium_observed":"sb-medium","high_observed":"sb-high"}.get(group,"")
-    if _non_music(str(r.track_name)) or str(r.track_name).startswith("["):
-        title="⚠ Grabación ilustrativa que requiere revisión: "+title
+    # Únicamente mostramos alertas importantes; el detalle queda en Auditoría.
+    if audit["display_quality"] == "sin_ejemplo":
+        title="⚠ Sin canción ilustrativa revisable en la muestra"
+    elif "no coinciden exactamente" in audit["display_reason"]:
+        title += " · ⚠ género de esta grabación sin correspondencia confirmada"
     return (f"<div class='sb-artist'><div class='sb-rank'>#{int(r.position)} · Artista recomendado</div>"
             f"<div class='sb-name'>{name}</div><div class='sb-song'>Ejemplo del catálogo: {title}</div>"
             f"<div style='margin-top:11px'><span class='sb-chip {g_cls}'>Popularidad {g_label.lower()}</span></div></div>")
@@ -139,7 +138,7 @@ def _discover(profile: str, preference: str, representation_name: str, top_k: in
     names={"Priorizar artistas conocidos":"Modelo A · da más peso a la popularidad",
            "Descubrir música menos conocida":"Modelo C · reduce el peso de la popularidad"}
     info=(f"**{len(ranked)} artistas recomendados** de {len(pool)} compatibles. "
-          f"{names[preference]}. Las canciones indicadas son solo ejemplos del catálogo.")
+          f"{names[preference]}. Las canciones son ejemplos del catálogo, no una garantía del género ni de escucha verificada.")
     if len(ranked)<top_k:
         info+=f" Solo existen {len(pool)} candidatos compatibles: no rellenamos la lista artificialmente."
     if relaxed:
@@ -157,6 +156,10 @@ def _explain(profile: str, preference: str, representation_name: str, top_k: int
     except ValueError:
         return "La lista cambió. Pulsa **Ver recomendaciones** otra vez."
     tags=", ".join(escape(t) for t in item["matched_tags"]) or "No hay etiqueta exacta; coincidencia calculada por TF-IDF"
+    shown=ENGINE.illustration(artist_id)
+    note=escape(shown["display_reason"])
+    song=escape(shown["display_example"])
+    changed=" Se conservó el registro original del experimento." if shown["example_changed"] else ""
     return (f"### {escape(item['artist_name'])} · Puesto #{item['rank']}\n\n"
             f"**Coincidencia con el perfil {escape(profile)}:** {tags}.\n\n"
             f"**Desglose de puntuación:** similitud {item['similarity']:.4f} × "
@@ -167,9 +170,9 @@ def _explain(profile: str, preference: str, representation_name: str, top_k: int
             f"**Grupo:** {item['pop_group']} · **candidatos elegibles:** {item['population']}. "
             f"{'Se aplicó un tope por popularidad. ' if item['has_group_cap'] else ''}"
             f"{'El tope se relajó por falta de candidatos. ' if item['cap_relaxed'] else ''}\n\n"
-            f"**Grabación ilustrativa:** {escape(item['track_example'])}. "
-            f"Sus etiquetas tienen procedencia `{escape(item['genre_source'])}`; "
-            "la similitud se calcula con etiquetas **del artista**, no con audio ni gustos comprobados.\n\n"
+            f"**Ejemplo visible del catálogo:** {song}. Estado: `{shown['display_quality']}`. "
+            f"Nota de calidad: {note}.{changed} "
+            "La similitud se calcula con etiquetas **del artista**, no con audio ni gustos comprobados.\n\n"
             f"*{item['note']}*")
 
 
@@ -346,6 +349,25 @@ def create_app():
                 gr.Markdown("**Qué significa:** al reducir el peso de popularidad cambió la exposición en esta muestra. "
                             "**Qué NO significa:** que el modelo C sea definitivamente justo o que los oyentes lo prefieran. "
                             "Los perfiles son categorías musicales, no personas reales.")
+                with gr.Accordion("Calidad del catálogo · canciones ilustrativas",open=False):
+                    overview=ENGINE.illustration_audit
+                    no_song=int((overview["display_quality"]=="sin_ejemplo").sum())
+                    changes=int(overview["example_changed"].sum())
+                    gr.Markdown(f"**{len(overview)} artistas revisados** · "
+                                f"**{changes} ejemplos cambiados/no disponibles** · "
+                                f"**{no_song} artistas sin grabación ilustrativa apta**. "
+                                "Estas son comprobaciones de metadatos, no verificación por escucha. "
+                                "El ranking por artista y la evidencia histórica no se modificaron.")
+                    issues=ENGINE.illustration_issues()
+                    columns={"artist_name":"Artista", "original_example":"Grabación histórica",
+                             "display_example":"Ejemplo propuesto", "display_quality":"Estado",
+                             "display_reason":"Observación"}
+                    gr.Dataframe(value=issues[list(columns)].rename(columns=columns),
+                                 label="Casos que necesitan revisión",interactive=False)
+                    gr.Markdown("**Importante:** un artista puede coincidir con el género del perfil sin que "
+                                "todas sus grabaciones lo hagan. Las respuestas históricas describen "
+                                "otros ejemplos y no se recalculan retroactivamente. "
+                                "Detalles: `docs/informes/CALIDAD_CATALOGO_V09.md`.")
                 with gr.Accordion("Estudio exploratorio de participantes",open=False):
                     gr.Markdown("**9 relatos recibidos:** resumen temático anónimo de preferencias "
                                 "transmitidas por el responsable del proyecto. "
@@ -415,6 +437,7 @@ def create_app():
 - Cada acción exige alias, decisión y justificación; el registro se firma con una cadena HMAC y se comprueba antes de usar bloqueos.
 - Entradas y perfiles se validan en el servidor; no se alteran el dataset ni los CSV de experimentos.
 - Las respuestas individuales no se publican; solo se muestran tendencias agregadas de nueve relatos indirectos.
+- La selección de grabaciones visibles está sujeta a un control automático de metadatos, **sin certificar que la canción corresponda al género**; el ranking sigue siendo de artistas.
 
 **Límites:** una clave compartida no ofrece identidades verificadas ni protección frente a alguien con acceso completo a la computadora y la clave. La cadena detecta cambios intermedios, pero no garantiza detectar que alguien borró el archivo completo o su tramo final. No desplegar públicamente sin autenticación real, respaldos y controles de acceso.
 

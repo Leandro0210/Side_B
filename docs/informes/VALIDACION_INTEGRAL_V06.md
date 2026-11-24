@@ -41,7 +41,9 @@ Estas proporciones describen **exposición entre los puestos del ranking** y no 
 - **Demostración académica local:** permitida solo si las comprobaciones técnicas pasan; vigilar los resultados pendientes.
 - **Uso real o despliegue público:** **NO APROBADO**. Faltan autenticación y autorización multiusuario, cifrado y política de retención verificable, recuperación ante eliminación/truncamiento del registro, revisión de seguridad, consentimiento y más participantes reales.
 - El HMAC de eventos detecta alteraciones del contenido existentes, pero no prueba por sí solo que un archivo no fue borrado o truncado hasta un prefijo válido. Requiere anclaje, respaldo externo y custodia de claves.
-- El nombre de una grabación ilustrativa puede ser no musical (p. ej., intervalo en directo); se requiere revisión del catálogo antes de mostrarla como canción.
+- La revisión de metadatos v0.9 ya evita enseñar como canciones cinco ejemplos originales no aptos (cuatro con alternativa del mismo artista y uno sin ejemplo). **La escucha verificable y la revisión editorial siguen pendientes.** Véase `CALIDAD_CATALOGO_V09.md`.
 - No publicar formularios individuales ni claves de asignación. Los nueve relatos recibidos son cualitativos e indirectos: no permiten inferir preferencias cuantitativas A/C.
 
 **Siguiente evidencia humana:** invitar participantes voluntarios con consentimiento, mostrar grabaciones comprobadas y registrar la valoración real de forma seudonimizada; documentar limitaciones de muestra y análisis. El informe en formato paper se redactará al final con la plantilla de la asignatura.
+
+**Control técnico ampliado en v0.9:** `calidad_grabaciones_ilustrativas` valida el origen de la alternativa y muestra `PENDIENTE` cuando hay artistas sin canción apta. No afecta el dictamen sobre preferencias reales.

@@ -24,6 +24,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from side_b_model_v0 import GROUPS, genre_token, greedy_cap_ranking, load_catalog
+from side_b_catalog_quality import build_illustration_catalog
 
 POLICIES = {
     "A · 25 % popularidad · sin límite": (0.25, False),
@@ -77,6 +78,12 @@ class SideBEngine:
         self.dataset_path = self.root / "data" / "dataset_v1" / "side_b_dataset.csv"
         self.tracks = pd.read_csv(self.dataset_path, dtype=str, keep_default_na=False)
         self.catalog, self.audit = load_catalog(self.dataset_path)
+        # Capa de PRESENTACIÓN. No participa en la puntuación ni en el ranking.
+        self.illustration_audit = build_illustration_catalog(self.tracks, self.catalog)
+        self._illustration_by_artist = {
+            str(r["artist_mbid"]): dict(r)
+            for r in self.illustration_audit.to_dict("records")
+        }
         self.profiles = sorted(self.catalog["sampling_genre"].dropna().unique().tolist())
         self.audit_log_path = self.root / "data" / "supervision" / "revisiones_demo.csv"
         self._repr = {}
@@ -87,6 +94,19 @@ class SideBEngine:
             vectorizer = TfidfVectorizer(analyzer=str.split, lowercase=False, norm="l2")
             vectors = vectorizer.fit_transform(c["tag_text"].tolist())
             self._repr[mode] = (c, vectorizer, vectors)
+
+    def illustration(self, artist_mbid: str) -> dict:
+        """Ejemplo visible por artista, sin cambiar el registro experimental."""
+        result = self._illustration_by_artist.get(str(artist_mbid))
+        if result is None:
+            raise KeyError("Artista sin ficha de calidad")
+        return dict(result)
+
+    def illustration_issues(self) -> pd.DataFrame:
+        """Filas que necesitan seguimiento editorial, sin información personal."""
+        quality = self.illustration_audit
+        mismatch = quality["display_reason"].str.contains("no coinciden exactamente", regex=False)
+        return quality.loc[quality["example_changed"] | mismatch].copy()
 
     def available(self, profile: str, representation: str, block: set[str] | None = None) -> pd.DataFrame:
         if profile not in self.profiles:
@@ -194,9 +214,11 @@ class SideBEngine:
         display = []
         for label, ranked in ((policy_a,a),(policy_b,b)):
             for r in ranked.itertuples(index=False):
+                illustration = self.illustration(r.artist_mbid)
                 display.append({"Política":label.split(' · ')[0], "Puesto":r.position,
                                 "Artista":r.artist_name, "Grupo":GROUP_LABELS[r.pop_group],
-                                "Canción ilustrativa":r.track_name,
+                                "Grabación mostrada":illustration["display_example"],
+                                "Estado de ejemplo":illustration["display_quality"],
                                 "Similitud":round(float(r.content_similarity),3)})
         note = ("Comparación local sobre el mismo conjunto elegible; las políticas difieren en el ranking. "
                 "La similitud es una aproximación basada en etiquetas musicales, NO satisfacción humana. "
