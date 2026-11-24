@@ -17,3 +17,4 @@ jobs:
       - run: python validar_integral_side_b.py
       - run: python side_b_catalog_quality.py
       - run: python side_b_risk_register.py
+      - run: python side_b_ethics_closure.py
