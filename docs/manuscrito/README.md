@@ -1,17 +1,13 @@
-# SIDE B — artículo científico en español
+# SIDE B — informe académico con márgenes de la plantilla Revista 3i
 
-Esta carpeta contiene el manuscrito en Word editable y PDF, ambos redactados en español y maquetados según el estilo visual de la plantilla Revista 3i.
+## Cambios de la revisión editorial
+- Se cotejó el archivo **PDF de seis páginas entregado por el docente** con el documento vigente y con la captura de pantalla en la que se muestra la columna estrecha.
+- Se ajustó el cuerpo principal a **5,15 pulgadas (13,1 cm)**, desde x≈79,5 pt hasta x≈450,1 pt de una página A4 (medidas obtenidas de la plantilla). Antes se utilizaban unas 6,1 pulgadas.
+- El párrafo de **Resumen** se desplazó hacia dentro hasta x≈104,5 pt, manteniendo el margen derecho en ≈450 pt, como en el ejemplo.
+- Tablas, títulos, encabezados y figuras se redimensionaron o centraron respecto de la nueva columna. El interlineado del cuerpo sigue siendo 1,5.
+- El Word editable y el PDF generado tienen **10 páginas**, dentro del intervalo exigido de 6 a 12, y conservan las cinco tablas editables y tres figuras.
 
-## Verificación editorial
+## Idioma y límites
+A solicitud de quien realiza el proyecto, el manuscrito está en español y conserva los nombres originales de publicaciones en las referencias bibliográficas. La plantilla editorial solicita además títulos y resúmenes en inglés y portugués; esta edición se aparta de ese requisito concreto y debería recuperarlo si se exige cumplimiento literal.
 
-- Extensión: **9 páginas**, formato A4 y distribución profesional.
-- Texto explicativo, encabezados, títulos y etiquetas de figuras en español.
-- Cinco tablas editables y tres gráficos en alta resolución; trece referencias académicas con DOI.
-- Se mantienen los nombres propios, las siglas técnicas, los DOI y los títulos originales de las publicaciones citadas, como corresponde a referencias APA 7.
-- Se conservaron los resultados originales (72 artistas, 576 grabaciones y cuatro políticas experimentales). Los nueve relatos se tratan únicamente como evidencia cualitativa agregada, sin atribuir calificaciones no verificadas.
-
-## Excepción de la plantilla
-
-A solicitud del equipo autor, el documento incluye **solo el título y el Resumen en español**. La plantilla Revista 3i pide además los títulos, Abstract y Resumo en inglés y portugués. Para presentarlo literalmente a esa revista es preciso restituirlos, aun cuando el resto del manuscrito se redacte en español.
-
-**Campos pendientes:** autoría, afiliación real, correo, ORCID, fecha, financiación, conflictos de intereses, verificación de consentimientos y control institucional de originalidad. Los datos personales no se inventan.
+No se cambiaron los datos ni resultados históricos de SIDE B. Los nueve relatos de personas se mantienen descritos de forma cualitativa y agrupada. Siguen pendientes los campos verificables de autores, facultad, institución, correos, ORCID, fecha de envío y declaraciones personales.
