@@ -5,7 +5,6 @@
 - **Datos públicos musicales:** MusicBrainz aporta metadatos de artista y grabación; ListenBrainz, indicadores de oyentes observados. Su cobertura no representa el mercado musical global.
 - **Perfiles de escucha en la demo:** solo se selecciona un género de los seis disponibles. No se solicita nombre, correo, historial privado, cuenta de Spotify ni ubicación del oyente.
 - **Evaluación real:** la encuesta usa identificadores P01, P02… y debe recopilarse solo con consentimiento, sin datos personales ni información identificativa en `notes`. Las respuestas individuales y la clave de asignación `private/` se conservan **fuera de GitHub**.
-- **Datos sintéticos:** P02–P05 simulados se guardan por separado y no permiten afirmar preferencias humanas.
 - **Supervisión local:** el auditor usa un alias y un motivo; el registro se guarda en `data/supervision/` (excluido de Git), con firma HMAC de integridad y clave en variable de entorno. No se deben incluir nombres, contactos ni datos personales en esos campos.
 - **Retención recomendada:** conservar solo agregados de evaluación necesarios para el paper. Borrar las respuestas individuales tras el periodo académico y el consentimiento aplicable.
 
@@ -28,4 +27,4 @@ Con `w=0.25` (A/B) o `w=0.05` (C/D). Los modelos B y D incorporan además un top
 
 ## Evidencia para el paper
 
-Usar CSV agregados, capturas que no muestren claves ni respuestas individuales, comprobaciones de integridad, pruebas unitarias y explicaciones reproducibles. Distinguir siempre resultados del modelo, valoraciones reales y respuestas simuladas.
+Usar CSV agregados, capturas que no muestren claves ni respuestas individuales, comprobaciones de integridad, pruebas unitarias y explicaciones reproducibles. Distinguir siempre resultados del modelo, relatos cualitativos y calificaciones efectivamente recibidas por canción.

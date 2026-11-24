@@ -88,7 +88,7 @@ Ejemplos: en pop, C y D generaron la misma distribución 4/3/3. En hip hop, C ge
 **No elegir aún una política ganadora.** La configuración C (5 % de popularidad, sin límite) resulta un comparador importante, pues en esta muestra tiene la mayor similitud de metadatos, pero no tenemos relevancia validada. Las políticas B y D pueden responder a distintas metas de representación. El próximo experimento debe incluir:
 
 1. **Control de circularidad:** repetir cuatro políticas sin `sampling_genre` dentro de las características TF-IDF; tratar los perfiles con vocabulario del artista y verificar cobertura.
-2. **Validación de relevancia:** construir 20–30 perfiles de gustos simulados y una muestra de recomendaciones para evaluación humana ciega de compatibilidad, con escala y protocolo explícitos; separar gustos reales de perfiles simulados.
+2. **Validación de relevancia:** construir 20–30 escenarios de preferencias definidos previamente y una muestra de recomendaciones para evaluación humana ciega de compatibilidad, con escala y protocolo explícitos; separar escenarios técnicos de valoraciones verificadas.
 3. **Sensibilidad:** comparar Top-5, Top-10 y Top-20, así como pesos de popularidad y límites alternativos, con conjuntos elegibles constantes por experimento.
 4. **Métricas por perfil:** reportar composición de elegibles, selección por grupo, exposición descontada, similitud proxy, cobertura de artistas y posibles pérdidas para perfiles minoritarios.
 5. **Seguridad y responsabilidad:** definir acciones de auditor humano, registro de cambios y límites de inferencia antes de construir el panel.

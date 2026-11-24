@@ -33,7 +33,7 @@ Los parámetros avanzados —políticas B/D, representación con etiqueta de mue
 - A: 25 % de peso de popularidad; C: 5 %. Los otros modelos B/D añaden una restricción de exposición por grupo.
 - Baja/media/alta significan **terciles de oyentes de esta muestra**. No indican qué artistas son emergentes ni equivalen a grupos protegidos.
 - La similitud se calcula con etiquetas musicales, **no** con valoraciones verificadas de usuarios.
-- La evaluación de **P01** procede de una persona; **P02–P05 son simulaciones** y aparecen separadas. Las puntuaciones sintéticas no son evidencia empírica.
+- Los nueve relatos recibidos se analizan solo de forma **cualitativa y agregada**. No se atribuyen puntuaciones por canción que no fueron comunicadas.
 - Las acciones de supervisión se registran aparte y solo modifican la **demostración** local, no los resultados científicos.
 
 ## Pruebas
@@ -75,13 +75,6 @@ Se añadió una comprobación reproducible del sistema que **no** sustituye una 
 
 El diagnóstico comprueba SHA-256, reproduce **48 escenarios** de los cuatro modelos en seis perfiles y dos representaciones, verifica los desgloses de puntuación y simula una intervención humana autorizada en un directorio temporal. Comprueba los archivos **versionados** para evitar subir respuestas individuales si está disponible Git. En la pestaña **Auditoría ética → Validación integral reproducible** puedes ejecutarlo sin mostrar las tablas hasta solicitarlas.
 
-**Datos de evaluación:** el repositorio público no distribuye las valoraciones individuales reales ni simuladas. En una instalación sin resúmenes locales autorizados, las tablas aparecen vacías con una explicación explícita; no deben rellenarse artificialmente. El diagnóstico señala evaluación humana ampliada como **PENDIENTE**. El despliegue público **no está aprobado**.
+**Estudio de recepción v0.8:** se recibieron nueve relatos de preferencias, publicados solo como cinco tendencias temáticas agregadas, sin nombres, datos personales ni notas individuales por canción. Los relatos son indirectos y no disponemos de consentimientos documentados, por lo que **no se calcula una mejora de relevancia A frente a C**. El diagnóstico conserva el estado de validación humana cuantitativa como **PENDIENTE**. El despliegue público **no está aprobado**.
 
-Resultados y límites: [`docs/informes/VALIDACION_INTEGRAL_V06.md`](docs/informes/VALIDACION_INTEGRAL_V06.md).
-
-
-## Demostración con personajes ficticios (v0.7)
-
-SIDE B incluye **cinco personajes de prueba con nombres inventados** (Valeria, Mateo, Lucía, Diego y Camila). No son personas encuestadas: la aplicación genera 140 puntuaciones sintéticas sobre pop/rock de forma determinista y **marcada como SIMULADO en todos los registros**.
-
-Puedes probarlo sin guardar nada desde **Auditoría ética → Evaluación humana y simulación → Probar con 5 personajes ficticios → Simular ahora**. Para generar CSV de prueba *solo en la carpeta privada excluida de Git*: `python simular_participantes.py`. **Nunca** se mezclan estas cifras con respuestas reales ni se presentan como evidencia empírica. Consulta [`docs/informes/SIMULACION_FICTICIA_V07.md`](docs/informes/SIMULACION_FICTICIA_V07.md). El paper académico sigue pendiente de estudios humanos reales y de la plantilla docente.
+Resultados y límites: [`docs/informes/VALIDACION_INTEGRAL_V06.md`](docs/informes/VALIDACION_INTEGRAL_V06.md) y [`docs/informes/ESTUDIO_EXPLORATORIO_V08.md`](docs/informes/ESTUDIO_EXPLORATORIO_V08.md).

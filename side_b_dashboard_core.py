@@ -305,10 +305,10 @@ class SideBEngine:
                 if os.path.exists(temp_path): os.unlink(temp_path)
         return f"Decisión registrada: {decision} para {record['artist_name']}. Los datos científicos no se modificaron."
 
-    def evaluation(self, simulated: bool) -> pd.DataFrame:
-        location = (self.root / "simulacion" / "validacion_humana" if simulated
-                    else self.root / "data" / "validacion_humana_v0_3")
-        return csv_semicolon(location/"analysis"/"summary_by_profile.csv")
+    def evaluation(self) -> pd.DataFrame:
+        """Leer únicamente resultados de formularios locales completos, cuando existan."""
+        location = self.root / "data" / "validacion_humana_v0_3"
+        return csv_semicolon(location / "analysis" / "summary_by_profile.csv")
 
     def simple_audit(self) -> pd.DataFrame:
         path=self.root/"data"/"auditoria_v0_1"/"ablation_overall.csv"

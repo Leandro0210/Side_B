@@ -24,7 +24,7 @@ Se recomienda **un artista por posición**, acompañado de una grabación de eje
 - `comparison_by_profile.csv`: grupos de popularidad disponibles por perfil, cobertura en top-K, exposición ponderada por posición y similitud media.
 - `experiment_manifest.json`: parámetros, procedencia, controles de calidad y limitaciones.
 
-Por defecto se crean seis perfiles **simulados** a partir de cada `sampling_genre` presente. **No representan usuarios reales.**
+Por defecto se crean seis perfiles **de prueba** a partir de cada `sampling_genre` presente. **No representan usuarios reales.**
 
 ## ¿Qué compara?
 
@@ -36,7 +36,7 @@ Por defecto se crean seis perfiles **simulados** a partir de cada `sampling_genr
 
 ## Principales advertencias metodológicas
 
-- Un perfil como `rock` es un escenario simulado; no es un oyente.
+- Un perfil como `rock` es un escenario técnico; no es un oyente.
 - El tercil no es una clase protegida ni una etiqueta de artista emergente; es relativo al dataset. Igualdad de recuentos no equivale a justicia.
 - El listado de candidatos puede estar sesgado por el muestreo de origen; los resultados solo aplican a este catálogo.
 - Usar `sampling_genre` en los rasgos garantiza coincidencia con el género de búsqueda: es útil como prototipo, pero hay circularidad entre selección y similitud. Se debe documentar y validar con etiquetas externas para un estudio conclusivo.
