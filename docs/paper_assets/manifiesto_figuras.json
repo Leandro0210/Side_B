@@ -1,0 +1,18 @@
+{
+  "formato": "SIDE_B_PAPER_ASSETS_V012",
+  "archivos_fuente": {
+    "data/auditoria_v0_1/ablation_overall.csv": "2b0fa56aea164ab098c446fc2f42f3061bbb2882269a46820f55ed60ed5ea394",
+    "data/auditoria_v0_1/ablation_by_profile.csv": "a4c146923c7e47b5066c64434bfb2702e7196241de454a13931fb7c0a6b70b83"
+  },
+  "figuras": [
+    "figura_01_exposicion_politicas.png",
+    "figura_02_popularidad_por_perfil.png",
+    "figura_03_similitud_proxy.png"
+  ],
+  "tablas": [
+    "tabla_01_exposicion_politicas.csv",
+    "tabla_02_comparacion_perfil.csv"
+  ],
+  "notas": "Figuras ilustran posiciones del ranking y similitud proxy; no respuestas humanas.",
+  "reproducir": "python generar_figuras_paper.py"
+}

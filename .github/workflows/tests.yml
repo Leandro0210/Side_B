@@ -18,3 +18,5 @@ jobs:
       - run: python side_b_catalog_quality.py
       - run: python side_b_risk_register.py
       - run: python side_b_ethics_closure.py
+      - run: python side_b_rubric_review.py
+      - run: python generar_figuras_paper.py --check
