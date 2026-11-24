@@ -63,3 +63,18 @@ Comprueba que las evidencias del dataset y experimentos anteriores siguen intact
 ## Privacidad y explicabilidad
 
 En la pestaña Descubrir música se puede abrir «¿Por qué aparecen estos artistas?» para ver el desglose real de la puntuación. Ver [`docs/PRIVACIDAD_EXPLICABILIDAD.md`](docs/PRIVACIDAD_EXPLICABILIDAD.md) para limitaciones, tratamiento de respuestas y claves de auditoría. El sistema es **local**; no usar `share=True` ni publicarlo como un sitio sin otros controles.
+
+
+## Validación integral local (v0.6)
+
+Se añadió una comprobación reproducible del sistema que **no** sustituye una auditoría externa ni establece que un algoritmo sea justo:
+
+```powershell
+.\.venv\Scripts\python.exe validar_integral_side_b.py --out resultados_validacion
+```
+
+El diagnóstico comprueba SHA-256, reproduce **48 escenarios** de los cuatro modelos en seis perfiles y dos representaciones, verifica los desgloses de puntuación y simula una intervención humana autorizada en un directorio temporal. Comprueba los archivos **versionados** para evitar subir respuestas individuales si está disponible Git. En la pestaña **Auditoría ética → Validación integral reproducible** puedes ejecutarlo sin mostrar las tablas hasta solicitarlas.
+
+**Datos de evaluación:** el repositorio público no distribuye las valoraciones individuales reales ni simuladas. En una instalación sin resúmenes locales autorizados, las tablas aparecen vacías con una explicación explícita; no deben rellenarse artificialmente. El diagnóstico señala evaluación humana ampliada como **PENDIENTE**. El despliegue público **no está aprobado**.
+
+Resultados y límites: [`docs/informes/VALIDACION_INTEGRAL_V06.md`](docs/informes/VALIDACION_INTEGRAL_V06.md).

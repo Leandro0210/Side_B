@@ -21,3 +21,6 @@ data/dataset_v1/unselected_recordings.csv
 
 # Artefactos regenerables y temporales no documentados
 *.log
+
+# Salidas locales del diagnóstico v0.6
+resultados_validacion/
