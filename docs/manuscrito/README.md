@@ -1,16 +1,13 @@
-# SIDE B — artículo científico en formato Revista 3i
+# SIDE B — manuscrito adaptado a la plantilla Revista 3i
 
-Manuscrito académico en Word editable y PDF de lectura. Este artículo usa resultados reproducibles de SIDE B v0.12. Es un documento de trabajo con campos editoriales por confirmar, **no un artículo aceptado por la revista**.
+Archivos Word y PDF corregidos a partir del diseño de seis páginas proporcionado por el docente.
 
-## Contenido
-- 9 páginas, interlineado 1,5, referencias con sangría francesa.
-- Título español de 11 palabras y traducciones al inglés y portugués.
-- Resúmenes de 154, 131 y 146 palabras; sin citas.
-- Resultados en cuatro páginas, cinco tablas editables y tres figuras PNG.
-- Trece referencias científicas con DOI verificables.
-- Datos experimentales A/B/C/D proceden de CSV versionados y contrastados; los nueve relatos se presentan solo agregados, sin inferir notas por canción.
+- Diseño A4, encabezado «Artículo científico» en azul, título español (11 palabras) con traducciones al inglés y portugués; bloque de autores en dos columnas.
+- Resumen, Abstract y Resumo (menos de 200 palabras), palabras clave en tres idiomas, texto sin sangría de primera línea e interlineado 1,5.
+- 10 páginas, resultados con al menos tres páginas, cinco tablas editables y tres figuras PNG de alta resolución.
+- Secciones de Discusión, Conclusiones, Referencias (13) y declaraciones finales conforme al documento fuente.
+- Esta versión se maquetó desde un **PDF**, por lo que es una réplica visual fiel y no una copia del archivo Word original.
 
-## Antes de entregar
-Reemplazar los campos entre corchetes: nombres y orden de autores, carrera, facultad, institución, ORCID, correo y fecha de presentación. Confirmar financiación y declaraciones de intereses. Comprobar consentimiento informado según el uso efectivo de datos. Revalidar paginación tras las modificaciones y revisar originalidad con el procedimiento institucional.
+**Pendientes de autoría:** sustituir campos entre corchetes por autores, institución, correo y ORCID reales, fecha de envío y declaraciones personales verificadas. La revisión de originalidad/similitud corresponde al procedimiento académico correspondiente.
 
-La guía de estilo y controles está en [FORMATO_PAPER_REVISTA_3I.md](../guias/FORMATO_PAPER_REVISTA_3I.md); figuras y tablas fuentes están en [paper_assets](../paper_assets/). La plantilla PDF del docente no se reproduce aquí.
+Ninguna cifra científica ni fuente de datos del proyecto SIDE B ha sido modificada. Los relatos humanos conservan su carácter cualitativo sin transformar estimaciones en respuestas individuales confirmadas.
