@@ -1,0 +1,13 @@
+﻿profile,policy,eligible_artists,eligible_low,eligible_medium,eligible_high,recommended_artists,low_top_k,medium_top_k,high_top_k,low_discounted_exposure_share,medium_discounted_exposure_share,high_discounted_exposure_share,mean_content_similarity_proxy,cap_relaxed
+electronic,baseline_popularity_boost,20,4,8,8,10,0,3,7,0.0,0.283515,0.716485,0.232448,False
+electronic,mitigated_group_cap,20,4,8,8,10,3,4,3,0.400023,0.352946,0.247031,0.281208,False
+hip hop,baseline_popularity_boost,15,7,4,4,10,4,2,4,0.532621,0.135685,0.331694,0.48238,False
+hip hop,mitigated_group_cap,15,7,4,4,10,4,3,3,0.554143,0.221193,0.224663,0.492013,False
+indie rock,baseline_popularity_boost,14,1,4,9,10,1,1,8,0.066254,0.063621,0.870125,0.261212,False
+indie rock,mitigated_group_cap,14,1,4,9,10,1,4,5,0.220092,0.294192,0.485716,0.27522,True
+latin,baseline_popularity_boost,12,10,2,0,10,9,1,0,0.933746,0.066254,0.0,0.489595,False
+latin,mitigated_group_cap,12,10,2,0,10,8,2,0,0.836459,0.163541,0.0,0.482719,True
+pop,baseline_popularity_boost,34,6,15,13,10,0,1,9,0.0,0.085143,0.914857,0.188898,False
+pop,mitigated_group_cap,34,6,15,13,10,4,3,3,0.535254,0.22784,0.236905,0.264633,False
+rock,baseline_popularity_boost,36,3,12,21,10,0,2,8,0.0,0.173187,0.826813,0.208047,False
+rock,mitigated_group_cap,36,3,12,21,10,2,4,4,0.136985,0.49464,0.368376,0.217904,False

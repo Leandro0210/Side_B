@@ -1,0 +1,73 @@
+﻿artist_mbid,artist_name,artist_country,artist_type,artist_genres,sampling_genre,artist_search_rank,artist_search_offset,artist_listens,artist_listeners,artist_popularity_status,artist_popularity_group
+592a3b6d-c42b-4567-99c9-ecf63bd66499,Chuck Berry,US,Person,blues; blues rock; classic rock; rock; rock and roll; rockabilly; soul,rock,67,0,3813220,179242,available,high_observed
+9e2d3f58-0653-4007-bcb7-1746fcdd9363,The Drifters,US,Group,doo-wop; pop; pop soul; r&b; soul,rock,188,100,810842,80720,available,medium_observed
+95c2339b-8277-49a6-9aaf-08d8eeeaa0be,Little Richard,US,Person,funk; new orleans r&b; pop; r&b; rock; rock and roll; soul,rock,102,100,1322706,96445,available,medium_observed
+c544ed4d-2390-4442-a83e-1ea2883b09c8,Lynyrd Skynyrd,US,Group,acoustic rock; blues rock; boogie rock; classic rock; country; country rock; hard rock; rock; southern rock,rock,194,100,7262119,218161,available,high_observed
+d87e52c5-bb8d-4da8-b941-9f4928627dc8,ABBA,SE,Group,dance; disco; euro-disco; europop; glam rock; mainstream rock; pop; pop rock; rock,rock,112,100,9831832,196296,available,high_observed
+b665b768-0d83-4363-950c-31ed39317c15,Van Halen,US,Group,classic rock; glam metal; hard rock; heavy metal; metal; rock,rock,122,100,9640645,196344,available,high_observed
+5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,GB,Person,alternative rock; art pop; art rock; classic rock; glam rock; new wave; pop; pop rock; rock,rock,14,0,42675097,382515,available,high_observed
+d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,US,Group,heartland rock; pop rock; rock,rock,3,0,2112589,101911,available,medium_observed
+b38225b8-8e5f-42aa-bcdc-7bae5b5bdab3,King Crimson,GB,Group,art rock; avant-garde; experimental rock; free improvisation; jazz fusion; progressive; progressive rock; rock; symphonic prog; symphonic rock,rock,65,0,7281575,98896,available,medium_observed
+4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,GB,Person,classic rock; experimental; pop; pop rock; rock; rock and roll; singer-songwriter,rock,45,0,8533807,240380,available,high_observed
+f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,US,Group,alternative metal; alternative rock; electronic rock; electropop; hard rock; heavy metal; hip hop; metal; nu metal; pop; pop rock; post-grunge; rap metal; rap rock; rapcore; rock,rock,137,100,68434359,353575,available,high_observed
+f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,GB,Group,art rock; electronic; glam rock; new wave; pop; pop rock; post-punk; rock; soft rock; synth-pop,rock,171,100,2621205,116448,available,medium_observed
+06fb1c8b-566e-4cb2-985b-b467c90781d4,Jimi Hendrix,US,Person,acid rock; blues; blues rock; classic rock; hard rock; jam band; psychedelic; psychedelic rock; psychedelic soul; rock,pop,77,0,14624708,278568,available,high_observed
+d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,US,Person,pop; pop rock; rock; rock and roll; rockabilly,pop,95,0,2997590,145556,available,medium_observed
+8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,CA,Group,americana; country rock; folk rock; pop rock; rock; roots rock,pop,153,100,3548980,126605,available,medium_observed
+83e71a21-caf7-4e48-8ff7-6512d51e88a3,Henry Mancini,US,Person,contemporary classical; easy listening; lounge,pop,164,100,930430,68354,available,medium_observed
+a41ac10f-0a56-4672-9161-b83f9b223559,Van Morrison,GB,Person,blue-eyed soul; blues; chamber folk; classic rock; contemporary folk; folk; folk pop; folk rock; rock; singer-songwriter; soft rock,pop,129,100,6773495,179120,available,high_observed
+323ed974-8bf6-4f54-9525-b774a659f805,Johnny Hallyday,FR,Person,blues rock; chanson française; country; country rock; pop; pop rock; psychedelic rock; rock; rock and roll; yé-yé,pop,93,0,200704,12637,available,low_observed
+d385947d-c00d-4311-9cf1-a032a1d4040b,Dinah Washington,US,Person,blues; easy listening; jazz; r&b; smooth jazz; traditional pop; vocal jazz,pop,166,100,1143439,81164,available,medium_observed
+7bb60591-46f3-4147-b692-1814a87e832e,Barry Manilow,US,Person,disco; easy listening; jazz; pop; pop rock; soft rock,pop,154,100,700533,51156,available,medium_observed
+43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,GB,Group,alternative dance; dance; dance-pop; electronic; new wave; pop; pop rock; rock; synth-pop,pop,134,100,2983559,102750,available,medium_observed
+b7539c32-53e7-4908-bda3-81449c367da6,Lana Del Rey,US,Person,alternative pop; art pop; ballad; baroque pop; chamber pop; country; dance; dream pop; edm; electronic; electronica; future bass; house; indie pop; indie rock; melodic house; melodic techno; neo-psychedelia; pop; psychedelic pop; r&b; rock; singer-songwriter; slowcore; trap; trip hop,pop,74,0,27039959,249873,available,high_observed
+bf6c29f5-b69f-4842-9031-37f9645d365d,Carole King,US,Person,brill building; folk; folk pop; singer-songwriter; soft rock; soul,pop,102,100,1510110,77847,available,medium_observed
+9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,JP,Group,j-pop; pop,pop,117,100,1128087,7534,available,low_observed
+7808accb-6395-4b25-858c-678bbb73896b,Bastille,GB,Group,alternative rock; electronic; electropop; house; indie pop; indie rock; pop; pop rock; rock; synth-pop,indie rock,123,100,2165022,66571,available,medium_observed
+e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,GB,Person,alternative rock; art rock; chamber folk; folk rock; indie rock; rock; singer-songwriter,indie rock,76,0,19006587,208362,available,high_observed
+77d21c13-846f-4f48-9546-873949eff6ae,The Damned,GB,Group,dance-rock; deathrock; gothic rock; horror punk; new wave; pop; post-punk; proto-punk; punk; punk rock; rock,indie rock,55,0,1810641,65824,available,medium_observed
+f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,US,Group,alternative rock; garage rock; garage rock revival; indie rock; new wave; pop; post-punk revival; rock; synth-pop,indie rock,160,100,44051913,338738,available,high_observed
+bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,US,Group,alternative rock; emo; emo pop; indie rock; pop punk; pop rock; power pop; punk; punk rock; rock,indie rock,196,100,18983969,231946,available,high_observed
+a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,US,Group,alternative rock; americana; blues rock; folk rock; indie rock; pop; pop rock; rock; roots rock; soft rock,indie rock,62,0,8343904,202653,available,high_observed
+6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,US,Group,avant-folk; indie folk; indie rock; lo-fi; noise pop; psychedelic folk; singer-songwriter,indie rock,128,100,2919407,66793,available,medium_observed
+a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,JP,Group,alternative rock; indie rock; j-pop; pop punk; pop rock,indie rock,70,0,1201480,23965,available,low_observed
+aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,GB,Group,alternative dance; alternative rock; art rock; britpop; dance-punk; dance-rock; indie pop; indie rock; indietronica; new wave; pop; post-punk; post-punk revival; rock,indie rock,120,100,29677921,337255,available,high_observed
+55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,GB,Group,alternative dance; alternative rock; blues rock; c86; electronic; indie rock; jangle pop; neo-psychedelia; rock,indie rock,116,100,4629286,152916,available,high_observed
+6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,US,Group,alternative rock; garage rock; garage rock revival; indie rock; pop rock; rock; southern rock,indie rock,199,100,43693881,339940,available,high_observed
+6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,GB,Group,alternative rock; britpop; glam rock; indie rock; neo-psychedelia; pop punk; post-britpop; power pop; rock,indie rock,157,100,4216964,143672,available,medium_observed
+373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,IT,Person,funk; hip hop; house; pop; pop rap; rock,hip hop,103,100,445889,15305,available,low_observed
+d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,DE,Person,hip hop,hip hop,188,100,11261,515,available,low_observed
+260b6184-8828-48eb-945c-bc4cb6fc34ca,Charli xcx,GB,Person,art pop; avant-garde pop; bubblegum bass; dance; dance-pop; deconstructed club; electroclash; electronic; electronica; electropop; europop; experimental hip hop; grime; hip hop; house; hyperpop; indie pop; new jack swing; new wave; pop; pop punk; synth-pop,hip hop,95,0,4211704,79326,available,medium_observed
+51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,US,Group,boom bap; chicano rap; gangsta rap; hardcore hip hop; hip hop; rap rock; rapcore; west coast hip hop,hip hop,56,0,7963778,171251,available,high_observed
+2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,DE,Person,hip hop,hip hop,132,100,961917,17736,available,low_observed
+c42e60f4-4520-4954-b6e4-82bbdf532c11,JPEGMAFIA,US,Person,alternative hip hop; alternative r&b; breakbeat; breaks; cloud rap; dance; east coast hip hop; electronica; experimental; experimental hip hop; future bass; glitch hop; hardcore hip hop; hip hop; house; industrial hip hop; lo-fi; pop; psychedelic; rock; trap; underground hip hop,hip hop,47,0,1638636,10921,available,low_observed
+47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,DE,Person,hip hop,hip hop,193,100,266366,13854,available,low_observed
+efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,US,Person,downtempo; electronic; electronica; experimental; experimental hip hop; hip hop; instrumental hip hop; trip hop; turntablism,hip hop,92,0,8258689,175761,available,high_observed
+b57db116-5947-462e-aa7b-3dd1ecb5be45,Necro,US,Person,boom bap; east coast hip hop; hardcore hip hop; hip hop; horrorcore; underground hip hop,hip hop,145,100,1059479,23418,available,low_observed
+fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,US,Person,boom bap; conscious hip hop; east coast hip hop; hardcore hip hop; hip hop,hip hop,78,0,272567,36179,available,medium_observed
+cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,US,Person,abstract hip hop; alternative hip hop; conscious hip hop; hip hop; political hip hop; pop rap; underground hip hop,hip hop,66,0,5897532,145634,available,medium_observed
+cbf882cd-5fb3-4324-b212-32ed0b985ba8,Twiztid,US,Group,alternative hip hop; alternative metal; hip hop; horrorcore; trip hop,hip hop,151,100,562911,7439,available,low_observed
+63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,JP,Group,electronic; electronica; progressive trance,electronic,66,0,68669,839,available,low_observed
+4cc51547-88ae-49a2-bf7e-0ef65ee7a94c,HIM,FI,Group,alternative rock; gothic metal; gothic rock; pop rock,electronic,157,100,16001166,151136,available,medium_observed
+69f20d99-1e04-4a18-aa6b-d31cd5331267,Conrad Schnitzler,DE,Person,ambient; electronic; experimental; krautrock; minimal synth; progressive electronic,electronic,144,100,44798,6292,available,low_observed
+d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,US,Group,dance-pop; hip hop; pop; pop rap; west coast hip hop,electronic,129,100,6028160,227194,available,high_observed
+f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,JP,Person,ambient; electronic; instrumental; new age,electronic,99,0,236541,18476,available,low_observed
+650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,US,Person,americana; art pop; dance; dance-pop; edm; electro house; electronic; electropop; jazz; pop; pop rock; rock; singer-songwriter; synth-pop,electronic,36,0,52316228,318715,available,high_observed
+7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,GB,Group,art pop; electronic; new wave; pop; pop rock; psychedelic pop; rock; sophisti-pop; synth-pop,electronic,87,0,4974732,183762,available,high_observed
+f9ab44f1-7b19-4ecb-830c-403abcf36cd1,Bob Sinclar,FR,Person,dance-pop; electro house; french house; funky house; hip house; house,electronic,113,100,1427192,97853,available,medium_observed
+c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,DE,Group,electro; electronic; futurepop; synth-pop,electronic,155,100,1480529,23993,available,low_observed
+88e2147d-0332-46f6-85b2-b5f463ba957b,BT,US,Person,ambient; breakbeat; breaks; club; dance; deep house; edm; electronic; electronica; funky house; house; idm; melodic house; melodic techno; nu skool breaks; organic house; pop; progressive house; progressive trance; techno; trance,electronic,118,100,2729605,82948,available,medium_observed
+a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,GB,Group,alternative rock; ambient pop; art pop; art rock; britpop; chamber pop; crossover prog; electronic; electronic rock; electronica; experimental; experimental rock; idm; indie rock; indietronica; post-britpop; post-grunge; rock,electronic,6,0,134659628,461120,available,high_observed
+47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,GB,Person,alternative dance; classic rock; electronic; hard rock; new wave; pop rock; post-punk; punk; punk rock; rock,electronic,120,100,3909314,168524,available,high_observed
+2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,PR,Person,dance; electronic; hip hop; latin; latin pop; reggae; reggaeton,latin,68,0,1032226,52994,available,medium_observed
+05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,ES,Group,latin,latin,172,100,3216,391,available,low_observed
+87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,MX,Person,latin; pop; ranchera,latin,97,0,87407,4334,available,low_observed
+01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,US,Person,latin; latin pop; pop,latin,48,0,197252,21885,available,low_observed
+c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,MX,Person,latin; mariachi; ranchera,latin,33,0,110806,4761,available,low_observed
+5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d,Luigi Boccherini,IT,Person,baroque; classical; classical period; instrumental; latin,latin,13,0,41120,10632,available,low_observed
+4b6d948c-372d-44e0-ba09-a649cc0e5c76,Eumir Deodato,BR,Person,bossa nova; jazz; jazz fusion; latin jazz,latin,191,100,132084,16708,available,low_observed
+0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,US,Person,big band; country; easy listening; jazz; latin; pop; rock; rock and roll; swing; traditional pop,latin,12,0,706582,74637,available,medium_observed
+9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,DO,Person,latin; merengue,latin,174,100,21861,2407,available,low_observed
+b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,VE,Person,bolero; latin; salsa,latin,84,0,71776,7812,available,low_observed
+c23280a8-abc8-4435-ab44-43762ce0c89c,Laurindo Almeida,BR,Person,jazz; latin jazz,latin,166,100,54137,8951,available,low_observed
+f8dff62b-2cc1-4ce9-8def-05a45421f3fe,Ana Belén,ES,Person,latin ballad,latin,89,0,75380,5614,available,low_observed

@@ -1,0 +1,477 @@
+﻿representation,profile,policy,position,artist_mbid,artist_name,example_track,group,content_similarity_proxy,ranking_score
+original_con_muestreo,electronic,A_pop25_sin_tope,1,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.291289,0.430272
+original_con_muestreo,electronic,A_pop25_sin_tope,2,4cc51547-88ae-49a2-bf7e-0ef65ee7a94c,HIM,And Love Said No (616 version),medium_observed,0.301572,0.392846
+original_con_muestreo,electronic,A_pop25_sin_tope,3,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.244603,0.374425
+original_con_muestreo,electronic,A_pop25_sin_tope,4,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.18875,0.370729
+original_con_muestreo,electronic,A_pop25_sin_tope,5,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.14301,0.357257
+original_con_muestreo,electronic,A_pop25_sin_tope,6,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.268875,0.347489
+original_con_muestreo,electronic,A_pop25_sin_tope,7,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.223224,0.341029
+original_con_muestreo,electronic,A_pop25_sin_tope,8,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.220815,0.33575
+original_con_muestreo,electronic,A_pop25_sin_tope,9,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.243689,0.332072
+original_con_muestreo,electronic,A_pop25_sin_tope,10,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.198649,0.329543
+original_con_muestreo,electronic,B_pop25_con_tope,1,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.291289,0.430272
+original_con_muestreo,electronic,B_pop25_con_tope,2,4cc51547-88ae-49a2-bf7e-0ef65ee7a94c,HIM,And Love Said No (616 version),medium_observed,0.301572,0.392846
+original_con_muestreo,electronic,B_pop25_con_tope,3,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.244603,0.374425
+original_con_muestreo,electronic,B_pop25_con_tope,4,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.18875,0.370729
+original_con_muestreo,electronic,B_pop25_con_tope,5,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.14301,0.357257
+original_con_muestreo,electronic,B_pop25_con_tope,6,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.268875,0.347489
+original_con_muestreo,electronic,B_pop25_con_tope,7,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.243689,0.332072
+original_con_muestreo,electronic,B_pop25_con_tope,8,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.297788,0.306674
+original_con_muestreo,electronic,B_pop25_con_tope,9,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.391404,0.30397
+original_con_muestreo,electronic,B_pop25_con_tope,10,f9ab44f1-7b19-4ecb-830c-403abcf36cd1,Bob Sinclar,Got to Be Free,medium_observed,0.219171,0.299795
+original_con_muestreo,electronic,C_pop05_sin_tope,1,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.391404,0.373917
+original_con_muestreo,electronic,C_pop05_sin_tope,2,4cc51547-88ae-49a2-bf7e-0ef65ee7a94c,HIM,And Love Said No (616 version),medium_observed,0.301572,0.319827
+original_con_muestreo,electronic,C_pop05_sin_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.291289,0.319085
+original_con_muestreo,electronic,C_pop05_sin_tope,4,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.297788,0.299565
+original_con_muestreo,electronic,C_pop05_sin_tope,5,f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,Ritual Waves,low_observed,0.292412,0.29168
+original_con_muestreo,electronic,C_pop05_sin_tope,6,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.268875,0.284597
+original_con_muestreo,electronic,C_pop05_sin_tope,7,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.244603,0.270568
+original_con_muestreo,electronic,C_pop05_sin_tope,8,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.257227,0.264505
+original_con_muestreo,electronic,C_pop05_sin_tope,9,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.243689,0.261366
+original_con_muestreo,electronic,C_pop05_sin_tope,10,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.223224,0.246785
+original_con_muestreo,electronic,D_pop05_con_tope,1,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.391404,0.373917
+original_con_muestreo,electronic,D_pop05_con_tope,2,4cc51547-88ae-49a2-bf7e-0ef65ee7a94c,HIM,And Love Said No (616 version),medium_observed,0.301572,0.319827
+original_con_muestreo,electronic,D_pop05_con_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.291289,0.319085
+original_con_muestreo,electronic,D_pop05_con_tope,4,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.297788,0.299565
+original_con_muestreo,electronic,D_pop05_con_tope,5,f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,Ritual Waves,low_observed,0.292412,0.29168
+original_con_muestreo,electronic,D_pop05_con_tope,6,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.268875,0.284597
+original_con_muestreo,electronic,D_pop05_con_tope,7,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.244603,0.270568
+original_con_muestreo,electronic,D_pop05_con_tope,8,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.257227,0.264505
+original_con_muestreo,electronic,D_pop05_con_tope,9,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.243689,0.261366
+original_con_muestreo,electronic,D_pop05_con_tope,10,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.223224,0.246785
+original_con_muestreo,hip hop,A_pop25_sin_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.815972
+original_con_muestreo,hip hop,A_pop25_sin_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.805556
+original_con_muestreo,hip hop,A_pop25_sin_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.756944
+original_con_muestreo,hip hop,A_pop25_sin_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.326557,0.456723
+original_con_muestreo,hip hop,A_pop25_sin_tope,5,f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,Hands Held High,high_observed,0.171739,0.37186
+original_con_muestreo,hip hop,A_pop25_sin_tope,6,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.222702,0.347582
+original_con_muestreo,hip hop,A_pop25_sin_tope,7,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.342632
+original_con_muestreo,hip hop,A_pop25_sin_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.341704
+original_con_muestreo,hip hop,A_pop25_sin_tope,9,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.315899
+original_con_muestreo,hip hop,A_pop25_sin_tope,10,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.3386,0.312978
+original_con_muestreo,hip hop,B_pop25_con_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.815972
+original_con_muestreo,hip hop,B_pop25_con_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.805556
+original_con_muestreo,hip hop,B_pop25_con_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.756944
+original_con_muestreo,hip hop,B_pop25_con_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.326557,0.456723
+original_con_muestreo,hip hop,B_pop25_con_tope,5,f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,Hands Held High,high_observed,0.171739,0.37186
+original_con_muestreo,hip hop,B_pop25_con_tope,6,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.222702,0.347582
+original_con_muestreo,hip hop,B_pop25_con_tope,7,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.342632
+original_con_muestreo,hip hop,B_pop25_con_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.341704
+original_con_muestreo,hip hop,B_pop25_con_tope,9,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.315899
+original_con_muestreo,hip hop,B_pop25_con_tope,10,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.3386,0.312978
+original_con_muestreo,hip hop,C_pop05_sin_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.963194
+original_con_muestreo,hip hop,C_pop05_sin_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.961111
+original_con_muestreo,hip hop,C_pop05_sin_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.951389
+original_con_muestreo,hip hop,C_pop05_sin_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.326557,0.35259
+original_con_muestreo,hip hop,C_pop05_sin_tope,5,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.3386,0.333476
+original_con_muestreo,hip hop,C_pop05_sin_tope,6,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.307546
+original_con_muestreo,hip hop,C_pop05_sin_tope,7,cbf882cd-5fb3-4324-b212-32ed0b985ba8,Twiztid,That’s Why They All Hate Us More Than You’ll Ever Know!,low_observed,0.2968,0.28821
+original_con_muestreo,hip hop,C_pop05_sin_tope,8,b57db116-5947-462e-aa7b-3dd1ecb5be45,Necro,Kid Joe (skit),low_observed,0.276059,0.277533
+original_con_muestreo,hip hop,C_pop05_sin_tope,9,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.268067,0.273414
+original_con_muestreo,hip hop,C_pop05_sin_tope,10,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.258751
+original_con_muestreo,hip hop,D_pop05_con_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.963194
+original_con_muestreo,hip hop,D_pop05_con_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.961111
+original_con_muestreo,hip hop,D_pop05_con_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.951389
+original_con_muestreo,hip hop,D_pop05_con_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.326557,0.35259
+original_con_muestreo,hip hop,D_pop05_con_tope,5,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.3386,0.333476
+original_con_muestreo,hip hop,D_pop05_con_tope,6,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.307546
+original_con_muestreo,hip hop,D_pop05_con_tope,7,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.268067,0.273414
+original_con_muestreo,hip hop,D_pop05_con_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.258751
+original_con_muestreo,hip hop,D_pop05_con_tope,9,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.222702,0.247678
+original_con_muestreo,hip hop,D_pop05_con_tope,10,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.245112
+original_con_muestreo,indie rock,A_pop25_sin_tope,1,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.300366,0.464858
+original_con_muestreo,indie rock,A_pop25_sin_tope,2,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.271638,0.43984
+original_con_muestreo,indie rock,A_pop25_sin_tope,3,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.31139,0.438403
+original_con_muestreo,indie rock,A_pop25_sin_tope,4,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.266349,0.401151
+original_con_muestreo,indie rock,A_pop25_sin_tope,5,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.230904,0.388456
+original_con_muestreo,indie rock,A_pop25_sin_tope,6,aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,No You Girls,high_observed,0.198632,0.381613
+original_con_muestreo,indie rock,A_pop25_sin_tope,7,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.164434,0.373326
+original_con_muestreo,indie rock,A_pop25_sin_tope,8,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.253896,0.360561
+original_con_muestreo,indie rock,A_pop25_sin_tope,9,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.367035,0.355137
+original_con_muestreo,indie rock,A_pop25_sin_tope,10,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.247479,0.341859
+original_con_muestreo,indie rock,B_pop25_con_tope,1,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.300366,0.464858
+original_con_muestreo,indie rock,B_pop25_con_tope,2,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.271638,0.43984
+original_con_muestreo,indie rock,B_pop25_con_tope,3,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.31139,0.438403
+original_con_muestreo,indie rock,B_pop25_con_tope,4,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.266349,0.401151
+original_con_muestreo,indie rock,B_pop25_con_tope,5,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.367035,0.355137
+original_con_muestreo,indie rock,B_pop25_con_tope,6,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.247479,0.341859
+original_con_muestreo,indie rock,B_pop25_con_tope,7,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.295763,0.322517
+original_con_muestreo,indie rock,B_pop25_con_tope,8,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.236637,0.281645
+original_con_muestreo,indie rock,B_pop25_con_tope,9,77d21c13-846f-4f48-9546-873949eff6ae,The Damned,I Just Can’t Be Happy Today (radio edit),medium_observed,0.201645,0.248456
+original_con_muestreo,indie rock,B_pop25_con_tope,10,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.230904,0.388456
+original_con_muestreo,indie rock,C_pop05_sin_tope,1,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.367035,0.364655
+original_con_muestreo,indie rock,C_pop05_sin_tope,2,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.31139,0.336793
+original_con_muestreo,indie rock,C_pop05_sin_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.300366,0.333265
+original_con_muestreo,indie rock,C_pop05_sin_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.271638,0.305278
+original_con_muestreo,indie rock,C_pop05_sin_tope,5,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.295763,0.301114
+original_con_muestreo,indie rock,C_pop05_sin_tope,6,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.266349,0.293309
+original_con_muestreo,indie rock,C_pop05_sin_tope,7,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.253896,0.275229
+original_con_muestreo,indie rock,C_pop05_sin_tope,8,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.247479,0.266355
+original_con_muestreo,indie rock,C_pop05_sin_tope,9,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.230904,0.262414
+original_con_muestreo,indie rock,C_pop05_sin_tope,10,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.236637,0.245639
+original_con_muestreo,indie rock,D_pop05_con_tope,1,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.367035,0.364655
+original_con_muestreo,indie rock,D_pop05_con_tope,2,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.31139,0.336793
+original_con_muestreo,indie rock,D_pop05_con_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.300366,0.333265
+original_con_muestreo,indie rock,D_pop05_con_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.271638,0.305278
+original_con_muestreo,indie rock,D_pop05_con_tope,5,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.295763,0.301114
+original_con_muestreo,indie rock,D_pop05_con_tope,6,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.266349,0.293309
+original_con_muestreo,indie rock,D_pop05_con_tope,7,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.247479,0.266355
+original_con_muestreo,indie rock,D_pop05_con_tope,8,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.236637,0.245639
+original_con_muestreo,indie rock,D_pop05_con_tope,9,77d21c13-846f-4f48-9546-873949eff6ae,The Damned,I Just Can’t Be Happy Today (radio edit),medium_observed,0.201645,0.211007
+original_con_muestreo,indie rock,D_pop05_con_tope,10,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.253896,0.275229
+original_con_muestreo,latin,A_pop25_sin_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.753472
+original_con_muestreo,latin,A_pop25_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.514976,0.459148
+original_con_muestreo,latin,A_pop25_sin_tope,3,f8dff62b-2cc1-4ce9-8def-05a45421f3fe,Ana Belén,Cruzar los brazos,low_observed,0.509965,0.40678
+original_con_muestreo,latin,A_pop25_sin_tope,4,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.514976,0.403593
+original_con_muestreo,latin,A_pop25_sin_tope,5,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.509965,0.396363
+original_con_muestreo,latin,A_pop25_sin_tope,6,c23280a8-abc8-4435-ab44-43762ce0c89c,Laurindo Almeida,Tambourin,low_observed,0.453083,0.381479
+original_con_muestreo,latin,A_pop25_sin_tope,7,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.386611,0.328153
+original_con_muestreo,latin,A_pop25_sin_tope,8,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.401265,0.321782
+original_con_muestreo,latin,A_pop25_sin_tope,9,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.290174,0.31138
+original_con_muestreo,latin,A_pop25_sin_tope,10,4b6d948c-372d-44e0-ba09-a649cc0e5c76,Eumir Deodato,Uncle Funk,low_observed,0.31494,0.298705
+original_con_muestreo,latin,B_pop25_con_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.753472
+original_con_muestreo,latin,B_pop25_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.514976,0.459148
+original_con_muestreo,latin,B_pop25_con_tope,3,f8dff62b-2cc1-4ce9-8def-05a45421f3fe,Ana Belén,Cruzar los brazos,low_observed,0.509965,0.40678
+original_con_muestreo,latin,B_pop25_con_tope,4,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.514976,0.403593
+original_con_muestreo,latin,B_pop25_con_tope,5,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.290174,0.31138
+original_con_muestreo,latin,B_pop25_con_tope,6,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.246178,0.295744
+original_con_muestreo,latin,B_pop25_con_tope,7,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.509965,0.396363
+original_con_muestreo,latin,B_pop25_con_tope,8,c23280a8-abc8-4435-ab44-43762ce0c89c,Laurindo Almeida,Tambourin,low_observed,0.453083,0.381479
+original_con_muestreo,latin,B_pop25_con_tope,9,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.386611,0.328153
+original_con_muestreo,latin,B_pop25_con_tope,10,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.401265,0.321782
+original_con_muestreo,latin,C_pop05_sin_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.950694
+original_con_muestreo,latin,C_pop05_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.514976,0.50381
+original_con_muestreo,latin,C_pop05_sin_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.514976,0.492699
+original_con_muestreo,latin,C_pop05_sin_tope,4,f8dff62b-2cc1-4ce9-8def-05a45421f3fe,Ana Belén,Cruzar los brazos,low_observed,0.509965,0.489328
+original_con_muestreo,latin,C_pop05_sin_tope,5,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.509965,0.487245
+original_con_muestreo,latin,C_pop05_sin_tope,6,c23280a8-abc8-4435-ab44-43762ce0c89c,Laurindo Almeida,Tambourin,low_observed,0.453083,0.438762
+original_con_muestreo,latin,C_pop05_sin_tope,7,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.401265,0.385368
+original_con_muestreo,latin,C_pop05_sin_tope,8,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.386611,0.374919
+original_con_muestreo,latin,C_pop05_sin_tope,9,4b6d948c-372d-44e0-ba09-a649cc0e5c76,Eumir Deodato,Uncle Funk,low_observed,0.31494,0.311693
+original_con_muestreo,latin,C_pop05_sin_tope,10,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.290174,0.294415
+original_con_muestreo,latin,D_pop05_con_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.950694
+original_con_muestreo,latin,D_pop05_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.514976,0.50381
+original_con_muestreo,latin,D_pop05_con_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.514976,0.492699
+original_con_muestreo,latin,D_pop05_con_tope,4,f8dff62b-2cc1-4ce9-8def-05a45421f3fe,Ana Belén,Cruzar los brazos,low_observed,0.509965,0.489328
+original_con_muestreo,latin,D_pop05_con_tope,5,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.290174,0.294415
+original_con_muestreo,latin,D_pop05_con_tope,6,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.246178,0.256091
+original_con_muestreo,latin,D_pop05_con_tope,7,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.509965,0.487245
+original_con_muestreo,latin,D_pop05_con_tope,8,c23280a8-abc8-4435-ab44-43762ce0c89c,Laurindo Almeida,Tambourin,low_observed,0.453083,0.438762
+original_con_muestreo,latin,D_pop05_con_tope,9,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.401265,0.385368
+original_con_muestreo,latin,D_pop05_con_tope,10,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.386611,0.374919
+original_con_muestreo,pop,A_pop25_sin_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.204539,0.399932
+original_con_muestreo,pop,A_pop25_sin_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.235723,0.395542
+original_con_muestreo,pop,A_pop25_sin_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.225037,0.380583
+original_con_muestreo,pop,A_pop25_sin_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.182513,0.372995
+original_con_muestreo,pop,A_pop25_sin_tope,5,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.275611,0.366431
+original_con_muestreo,pop,A_pop25_sin_tope,6,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.14582,0.338532
+original_con_muestreo,pop,A_pop25_sin_tope,7,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.178959,0.335608
+original_con_muestreo,pop,A_pop25_sin_tope,8,aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,No You Girls,high_observed,0.13346,0.332734
+original_con_muestreo,pop,A_pop25_sin_tope,9,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.18897,0.332699
+original_con_muestreo,pop,A_pop25_sin_tope,10,f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,Hands Held High,high_observed,0.118348,0.331817
+original_con_muestreo,pop,B_pop25_con_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.204539,0.399932
+original_con_muestreo,pop,B_pop25_con_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.235723,0.395542
+original_con_muestreo,pop,B_pop25_con_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.225037,0.380583
+original_con_muestreo,pop,B_pop25_con_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.182513,0.372995
+original_con_muestreo,pop,B_pop25_con_tope,5,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.275611,0.366431
+original_con_muestreo,pop,B_pop25_con_tope,6,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.382456,0.321564
+original_con_muestreo,pop,B_pop25_con_tope,7,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.327843,0.318799
+original_con_muestreo,pop,B_pop25_con_tope,8,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.203803,0.30563
+original_con_muestreo,pop,B_pop25_con_tope,9,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.207721,0.301624
+original_con_muestreo,pop,B_pop25_con_tope,10,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.188263,0.290503
+original_con_muestreo,pop,C_pop05_sin_tope,1,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.382456,0.370278
+original_con_muestreo,pop,C_pop05_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.327843,0.326034
+original_con_muestreo,pop,C_pop05_sin_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.327843,0.314923
+original_con_muestreo,pop,C_pop05_sin_tope,4,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.275611,0.293775
+original_con_muestreo,pop,C_pop05_sin_tope,5,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.235723,0.267687
+original_con_muestreo,pop,C_pop05_sin_tope,6,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.225037,0.256146
+original_con_muestreo,pop,C_pop05_sin_tope,7,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.204539,0.243617
+original_con_muestreo,pop,C_pop05_sin_tope,8,83e71a21-caf7-4e48-8ff7-6512d51e88a3,Henry Mancini,Bistro,medium_observed,0.226216,0.236433
+original_con_muestreo,pop,C_pop05_sin_tope,9,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.233336,0.233474
+original_con_muestreo,pop,C_pop05_sin_tope,10,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.207721,0.226501
+original_con_muestreo,pop,D_pop05_con_tope,1,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.382456,0.370278
+original_con_muestreo,pop,D_pop05_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.327843,0.326034
+original_con_muestreo,pop,D_pop05_con_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.327843,0.314923
+original_con_muestreo,pop,D_pop05_con_tope,4,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.275611,0.293775
+original_con_muestreo,pop,D_pop05_con_tope,5,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.235723,0.267687
+original_con_muestreo,pop,D_pop05_con_tope,6,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.225037,0.256146
+original_con_muestreo,pop,D_pop05_con_tope,7,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.204539,0.243617
+original_con_muestreo,pop,D_pop05_con_tope,8,83e71a21-caf7-4e48-8ff7-6512d51e88a3,Henry Mancini,Bistro,medium_observed,0.226216,0.236433
+original_con_muestreo,pop,D_pop05_con_tope,9,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.233336,0.233474
+original_con_muestreo,pop,D_pop05_con_tope,10,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.207721,0.226501
+original_con_muestreo,rock,A_pop25_sin_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.197988,0.395019
+original_con_muestreo,rock,A_pop25_sin_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.228174,0.38988
+original_con_muestreo,rock,A_pop25_sin_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.195352,0.386097
+original_con_muestreo,rock,A_pop25_sin_tope,4,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.311881,0.376272
+original_con_muestreo,rock,A_pop25_sin_tope,5,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.176667,0.368612
+original_con_muestreo,rock,A_pop25_sin_tope,6,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.266785,0.359811
+original_con_muestreo,rock,A_pop25_sin_tope,7,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.202521,0.356752
+original_con_muestreo,rock,A_pop25_sin_tope,8,b665b768-0d83-4363-950c-31ed39317c15,Van Halen,Best of Both Worlds,high_observed,0.186721,0.337958
+original_con_muestreo,rock,A_pop25_sin_tope,9,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.14115,0.335029
+original_con_muestreo,rock,A_pop25_sin_tope,10,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.173228,0.33131
+original_con_muestreo,rock,B_pop25_con_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.197988,0.395019
+original_con_muestreo,rock,B_pop25_con_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.228174,0.38988
+original_con_muestreo,rock,B_pop25_con_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.195352,0.386097
+original_con_muestreo,rock,B_pop25_con_tope,4,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.311881,0.376272
+original_con_muestreo,rock,B_pop25_con_tope,5,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.176667,0.368612
+original_con_muestreo,rock,B_pop25_con_tope,6,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.266785,0.359811
+original_con_muestreo,rock,B_pop25_con_tope,7,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.197276,0.300735
+original_con_muestreo,rock,B_pop25_con_tope,8,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.201068,0.296634
+original_con_muestreo,rock,B_pop25_con_tope,9,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.225863,0.228425
+original_con_muestreo,rock,B_pop25_con_tope,10,323ed974-8bf6-4f54-9525-b774a659f805,Johnny Hallyday,Fleurs d’amour et d’amitié,low_observed,0.152132,0.166182
+original_con_muestreo,rock,C_pop05_sin_tope,1,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.311881,0.324759
+original_con_muestreo,rock,C_pop05_sin_tope,2,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.266785,0.28539
+original_con_muestreo,rock,C_pop05_sin_tope,3,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.228174,0.260515
+original_con_muestreo,rock,C_pop05_sin_tope,4,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.197988,0.237394
+original_con_muestreo,rock,C_pop05_sin_tope,5,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.195352,0.233501
+original_con_muestreo,rock,C_pop05_sin_tope,6,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.202521,0.233367
+original_con_muestreo,rock,C_pop05_sin_tope,7,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.225863,0.226375
+original_con_muestreo,rock,C_pop05_sin_tope,8,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.201068,0.220181
+original_con_muestreo,rock,C_pop05_sin_tope,9,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.197276,0.217968
+original_con_muestreo,rock,C_pop05_sin_tope,10,b665b768-0d83-4363-950c-31ed39317c15,Van Halen,Best of Both Worlds,high_observed,0.186721,0.216969
+original_con_muestreo,rock,D_pop05_con_tope,1,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.311881,0.324759
+original_con_muestreo,rock,D_pop05_con_tope,2,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.266785,0.28539
+original_con_muestreo,rock,D_pop05_con_tope,3,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.228174,0.260515
+original_con_muestreo,rock,D_pop05_con_tope,4,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.197988,0.237394
+original_con_muestreo,rock,D_pop05_con_tope,5,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.195352,0.233501
+original_con_muestreo,rock,D_pop05_con_tope,6,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.202521,0.233367
+original_con_muestreo,rock,D_pop05_con_tope,7,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.225863,0.226375
+original_con_muestreo,rock,D_pop05_con_tope,8,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.201068,0.220181
+original_con_muestreo,rock,D_pop05_con_tope,9,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.197276,0.217968
+original_con_muestreo,rock,D_pop05_con_tope,10,323ed974-8bf6-4f54-9525-b774a659f805,Johnny Hallyday,Fleurs d’amour et d’amitié,low_observed,0.152132,0.154942
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,1,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.259102,0.385298
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,2,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.200647,0.379652
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,3,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.152464,0.364348
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,4,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.284295,0.359055
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,5,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.237598,0.35181
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,6,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.234648,0.346125
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,7,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.25815,0.342918
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,8,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.211692,0.339324
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,9,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.413792,0.320761
+solo_etiquetas_artista,electronic,A_pop25_sin_tope,10,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.316242,0.320515
+solo_etiquetas_artista,electronic,B_pop25_con_tope,1,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.259102,0.385298
+solo_etiquetas_artista,electronic,B_pop25_con_tope,2,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.200647,0.379652
+solo_etiquetas_artista,electronic,B_pop25_con_tope,3,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.152464,0.364348
+solo_etiquetas_artista,electronic,B_pop25_con_tope,4,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.284295,0.359055
+solo_etiquetas_artista,electronic,B_pop25_con_tope,5,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.237598,0.35181
+solo_etiquetas_artista,electronic,B_pop25_con_tope,6,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.25815,0.342918
+solo_etiquetas_artista,electronic,B_pop25_con_tope,7,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.413792,0.320761
+solo_etiquetas_artista,electronic,B_pop25_con_tope,8,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.316242,0.320515
+solo_etiquetas_artista,electronic,B_pop25_con_tope,9,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.271592,0.304389
+solo_etiquetas_artista,electronic,B_pop25_con_tope,10,f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,Ritual Waves,low_observed,0.310602,0.302396
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,1,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.413792,0.395186
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,2,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.316242,0.317096
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,3,f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,Ritual Waves,low_observed,0.310602,0.308961
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,4,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.284295,0.299247
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,5,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.259102,0.284341
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,6,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.271592,0.278152
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,7,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.25815,0.275104
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,8,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.237598,0.26044
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,9,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.252378,0.25851
+solo_etiquetas_artista,electronic,C_pop05_sin_tope,10,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.234648,0.256943
+solo_etiquetas_artista,electronic,D_pop05_con_tope,1,63d4eab6-de28-42d0-b506-148df013a618,ZUNTATA,BGM2,low_observed,0.413792,0.395186
+solo_etiquetas_artista,electronic,D_pop05_con_tope,2,c72c1c3d-bf05-457f-a9f7-a642bae6ca91,De/Vision,Phantom Dancer (demo 1994),low_observed,0.316242,0.317096
+solo_etiquetas_artista,electronic,D_pop05_con_tope,3,f3d8c154-208d-4efa-b52d-7e9f16adcdae,喜多郎,Ritual Waves,low_observed,0.310602,0.308961
+solo_etiquetas_artista,electronic,D_pop05_con_tope,4,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.284295,0.299247
+solo_etiquetas_artista,electronic,D_pop05_con_tope,5,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.259102,0.284341
+solo_etiquetas_artista,electronic,D_pop05_con_tope,6,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.271592,0.278152
+solo_etiquetas_artista,electronic,D_pop05_con_tope,7,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.25815,0.275104
+solo_etiquetas_artista,electronic,D_pop05_con_tope,8,47c8f88b-987a-4b64-9175-2b1b57809727,Billy Idol,Dancing With Myself,high_observed,0.237598,0.26044
+solo_etiquetas_artista,electronic,D_pop05_con_tope,9,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.252378,0.25851
+solo_etiquetas_artista,electronic,D_pop05_con_tope,10,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.234648,0.256943
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.815972
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.805556
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.756944
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.339222,0.466222
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,5,f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,Hands Held High,high_observed,0.171428,0.371626
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,6,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.22208,0.347116
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,7,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.342632
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.341704
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,9,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.315899
+solo_etiquetas_artista,hip hop,A_pop25_sin_tope,10,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.336235,0.311204
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.815972
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.805556
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.756944
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.339222,0.466222
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,5,f59c5520-5f46-4d2c-b2c4-822eabf53419,Linkin Park,Hands Held High,high_observed,0.171428,0.371626
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,6,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.22208,0.347116
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,7,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.342632
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.341704
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,9,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.315899
+solo_etiquetas_artista,hip hop,B_pop25_con_tope,10,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.336235,0.311204
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.963194
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.961111
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.951389
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.339222,0.364622
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,5,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.336235,0.331229
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,6,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.307546
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,7,cbf882cd-5fb3-4324-b212-32ed0b985ba8,Twiztid,That’s Why They All Hate Us More Than You’ll Ever Know!,low_observed,0.2968,0.28821
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,8,b57db116-5947-462e-aa7b-3dd1ecb5be45,Necro,Kid Joe (skit),low_observed,0.276059,0.277533
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,9,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.264764,0.270276
+solo_etiquetas_artista,hip hop,C_pop05_sin_tope,10,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.258751
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,1,2e0d05e0-d147-46e6-be51-8ffed2a9e0da,Kool Savas,Keiner außer uns (Street),low_observed,1.0,0.963194
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,2,47948cf4-1c10-4acc-a3b9-8a9cda532dfb,Frauenarzt,Es ist nicht alles Gold was glänzt,low_observed,1.0,0.961111
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,3,d591f4d9-1e46-4553-b4e6-00fede26146b,Blokkmonsta,Gib mir die Uzi (official music video),low_observed,1.0,0.951389
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,4,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.339222,0.364622
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,5,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.336235,0.331229
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,6,fc4568b6-cbe3-4a3d-8409-28510c19e3e2,KRS‐One,Better & Better,medium_observed,0.305458,0.307546
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,7,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.264764,0.270276
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,8,cf15719f-51f9-4db8-a15d-5eed9664ce69,Lupe Fiasco,Slave Ship (interlude),medium_observed,0.238013,0.258751
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,9,efa2c11a-1a35-4b60-bc1b-66d37de88511,DJ Shadow,Lyrics Are Hype,high_observed,0.22208,0.247087
+solo_etiquetas_artista,hip hop,D_pop05_con_tope,10,51508c1f-8d07-4a00-9cf1-26c570fe7b78,Cypress Hill,Stoned Is the Way of the Walk,high_observed,0.220732,0.245112
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,1,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.307449,0.47017
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,2,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.27715,0.443974
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,3,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.318659,0.443856
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,4,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.271819,0.405253
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,5,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.236644,0.392761
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,6,aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,No You Girls,high_observed,0.203254,0.385079
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,7,a74b1b7f-71a5-4011-9441-d0b5e4122711,Radiohead,A Reminder,high_observed,0.168429,0.376321
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,8,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.259218,0.364552
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,9,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.375474,0.361467
+solo_etiquetas_artista,indie rock,A_pop25_sin_tope,10,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.253563,0.346422
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,1,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.307449,0.47017
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,2,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.27715,0.443974
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,3,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.318659,0.443856
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,4,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.271819,0.405253
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,5,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.375474,0.361467
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,6,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.253563,0.346422
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,7,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.300031,0.325718
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,8,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.242592,0.286111
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,9,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.236644,0.392761
+solo_etiquetas_artista,indie rock,B_pop25_con_tope,10,aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,No You Girls,high_observed,0.203254,0.385079
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,1,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.375474,0.372672
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,2,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.318659,0.343699
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.307449,0.339993
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.27715,0.310515
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,5,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.300031,0.305168
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,6,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.271819,0.298506
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,7,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.259218,0.280284
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,8,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.253563,0.272134
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,9,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.236644,0.267867
+solo_etiquetas_artista,indie rock,C_pop05_sin_tope,10,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.242592,0.251296
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,1,a0387b9b-236d-475f-8846-b2dea4af1112,FLOW,Planet Walk,low_observed,0.375474,0.372672
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,2,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.318659,0.343699
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.307449,0.339993
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.27715,0.310515
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,5,7808accb-6395-4b25-858c-678bbb73896b,Bastille,Nocturnal Creatures,medium_observed,0.300031,0.305168
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,6,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.271819,0.298506
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,7,6386ddff-0d13-4685-9f0a-a82bf022fb1c,Supergrass,Eon,medium_observed,0.253563,0.272134
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,8,6f2f87e7-3ce9-4f1c-81dd-6f068a78cf26,the Microphones,01_Universe_drums L feedback L calvin L phil L bass L,medium_observed,0.242592,0.251296
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,9,55704c38-224f-4b75-b29f-d43653f8bc9a,Primal Scream,As One,high_observed,0.259218,0.280284
+solo_etiquetas_artista,indie rock,D_pop05_con_tope,10,bbc5b66b-d037-4f26-aecf-0b129e7f876a,Jimmy Eat World,Your New Aesthetic,high_observed,0.236644,0.267867
+solo_etiquetas_artista,latin,A_pop25_sin_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.753472
+solo_etiquetas_artista,latin,A_pop25_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.543722,0.480708
+solo_etiquetas_artista,latin,A_pop25_sin_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.543722,0.425152
+solo_etiquetas_artista,latin,A_pop25_sin_tope,4,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.54494,0.422594
+solo_etiquetas_artista,latin,A_pop25_sin_tope,5,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.417576,0.351377
+solo_etiquetas_artista,latin,A_pop25_sin_tope,6,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.432915,0.34552
+solo_etiquetas_artista,latin,A_pop25_sin_tope,7,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.314186,0.32939
+solo_etiquetas_artista,latin,A_pop25_sin_tope,8,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.2674,0.311661
+solo_etiquetas_artista,latin,A_pop25_sin_tope,9,5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d,Luigi Boccherini,"Sonata for Cello & Continuo in E-flat major, G. 10 - II. Adagio",low_observed,0.315116,0.281476
+solo_etiquetas_artista,latin,B_pop25_con_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.753472
+solo_etiquetas_artista,latin,B_pop25_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.543722,0.480708
+solo_etiquetas_artista,latin,B_pop25_con_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.543722,0.425152
+solo_etiquetas_artista,latin,B_pop25_con_tope,4,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.54494,0.422594
+solo_etiquetas_artista,latin,B_pop25_con_tope,5,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.314186,0.32939
+solo_etiquetas_artista,latin,B_pop25_con_tope,6,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.2674,0.311661
+solo_etiquetas_artista,latin,B_pop25_con_tope,7,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.417576,0.351377
+solo_etiquetas_artista,latin,B_pop25_con_tope,8,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.432915,0.34552
+solo_etiquetas_artista,latin,B_pop25_con_tope,9,5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d,Luigi Boccherini,"Sonata for Cello & Continuo in E-flat major, G. 10 - II. Adagio",low_observed,0.315116,0.281476
+solo_etiquetas_artista,latin,C_pop05_sin_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.950694
+solo_etiquetas_artista,latin,C_pop05_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.543722,0.531119
+solo_etiquetas_artista,latin,C_pop05_sin_tope,3,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.54494,0.520471
+solo_etiquetas_artista,latin,C_pop05_sin_tope,4,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.543722,0.520008
+solo_etiquetas_artista,latin,C_pop05_sin_tope,5,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.432915,0.415436
+solo_etiquetas_artista,latin,C_pop05_sin_tope,6,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.417576,0.404337
+solo_etiquetas_artista,latin,C_pop05_sin_tope,7,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.314186,0.317227
+solo_etiquetas_artista,latin,C_pop05_sin_tope,8,5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d,Luigi Boccherini,"Sonata for Cello & Continuo in E-flat major, G. 10 - II. Adagio",low_observed,0.315116,0.308388
+solo_etiquetas_artista,latin,C_pop05_sin_tope,9,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.2674,0.276252
+solo_etiquetas_artista,latin,D_pop05_con_tope,1,05af8f21-0ae3-4802-a29b-396daf0a022d,Parchís,Las Rockeras de Santa Teresita,low_observed,1.0,0.950694
+solo_etiquetas_artista,latin,D_pop05_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.543722,0.531119
+solo_etiquetas_artista,latin,D_pop05_con_tope,3,9f6a8201-3c75-4350-aae9-80d071501c68,Eddy Herrera,Mi forma de amar,low_observed,0.54494,0.520471
+solo_etiquetas_artista,latin,D_pop05_con_tope,4,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.543722,0.520008
+solo_etiquetas_artista,latin,D_pop05_con_tope,5,2f522f5c-111c-4ce8-8bd0-d82e97c227ad,Daddy Yankee,Palabras con sentido,medium_observed,0.314186,0.317227
+solo_etiquetas_artista,latin,D_pop05_con_tope,6,0182474b-8a1d-46d0-9d0f-e6df353335ea,Perry Como,Ave Maria,medium_observed,0.2674,0.276252
+solo_etiquetas_artista,latin,D_pop05_con_tope,7,c02be87c-adc4-4c34-afb3-900393050727,José Alfredo Jiménez,Qué bonito amor,low_observed,0.432915,0.415436
+solo_etiquetas_artista,latin,D_pop05_con_tope,8,b6059fbd-b176-4585-bb58-ea2f34269500,Oscar D’León,El Son De Adalberto,low_observed,0.417576,0.404337
+solo_etiquetas_artista,latin,D_pop05_con_tope,9,5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d,Luigi Boccherini,"Sonata for Cello & Continuo in E-flat major, G. 10 - II. Adagio",low_observed,0.315116,0.308388
+solo_etiquetas_artista,pop,A_pop25_sin_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.225487,0.415643
+solo_etiquetas_artista,pop,A_pop25_sin_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.259409,0.413307
+solo_etiquetas_artista,pop,A_pop25_sin_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.2591,0.40613
+solo_etiquetas_artista,pop,A_pop25_sin_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.201027,0.386882
+solo_etiquetas_artista,pop,A_pop25_sin_tope,5,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.302517,0.38661
+solo_etiquetas_artista,pop,A_pop25_sin_tope,6,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.160776,0.349749
+solo_etiquetas_artista,pop,A_pop25_sin_tope,7,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.197161,0.34926
+solo_etiquetas_artista,pop,A_pop25_sin_tope,8,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.416995,0.347469
+solo_etiquetas_artista,pop,A_pop25_sin_tope,9,7c7f9c94-dee8-4903-892b-6cf44652e2de,Tears for Fears,Mad World (World remix),high_observed,0.207615,0.346684
+solo_etiquetas_artista,pop,A_pop25_sin_tope,10,aa7a2827-f74b-473c-bd79-03d065835cf7,Franz Ferdinand,No You Girls,high_observed,0.147428,0.34321
+solo_etiquetas_artista,pop,B_pop25_con_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.225487,0.415643
+solo_etiquetas_artista,pop,B_pop25_con_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.259409,0.413307
+solo_etiquetas_artista,pop,B_pop25_con_tope,3,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.2591,0.40613
+solo_etiquetas_artista,pop,B_pop25_con_tope,4,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.201027,0.386882
+solo_etiquetas_artista,pop,B_pop25_con_tope,5,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.302517,0.38661
+solo_etiquetas_artista,pop,B_pop25_con_tope,6,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.416995,0.347469
+solo_etiquetas_artista,pop,B_pop25_con_tope,7,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.34997,0.335394
+solo_etiquetas_artista,pop,B_pop25_con_tope,8,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.227803,0.316685
+solo_etiquetas_artista,pop,B_pop25_con_tope,9,f41490ce-fe39-435d-86c0-ab5ce098b423,Simple Minds,All the Things She Said,medium_observed,0.206853,0.304445
+solo_etiquetas_artista,pop,B_pop25_con_tope,10,9e2d3f58-0653-4007-bcb7-1746fcdd9363,The Drifters,I Don’t Want to Go On Without You,medium_observed,0.224983,0.290265
+solo_etiquetas_artista,pop,C_pop05_sin_tope,1,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.416995,0.40309
+solo_etiquetas_artista,pop,C_pop05_sin_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.34997,0.347055
+solo_etiquetas_artista,pop,C_pop05_sin_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.34997,0.335943
+solo_etiquetas_artista,pop,C_pop05_sin_tope,4,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.302517,0.319336
+solo_etiquetas_artista,pop,C_pop05_sin_tope,5,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.259409,0.290188
+solo_etiquetas_artista,pop,C_pop05_sin_tope,6,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.2591,0.288506
+solo_etiquetas_artista,pop,C_pop05_sin_tope,7,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.225487,0.263518
+solo_etiquetas_artista,pop,C_pop05_sin_tope,8,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.256818,0.255783
+solo_etiquetas_artista,pop,C_pop05_sin_tope,9,7bb60591-46f3-4147-b692-1814a87e832e,Barry Manilow,Fanfare / I’m Comin’ Back,medium_observed,0.241738,0.247706
+solo_etiquetas_artista,pop,C_pop05_sin_tope,10,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.227803,0.245579
+solo_etiquetas_artista,pop,D_pop05_con_tope,1,9bffb20c-dd17-4895-9fd1-4e73e888d799,モーニング娘。,HELP!!,low_observed,0.416995,0.40309
+solo_etiquetas_artista,pop,D_pop05_con_tope,2,01d76a27-ee74-4e50-9383-b2f0683bae76,Jon Secada,Time Heals,low_observed,0.34997,0.347055
+solo_etiquetas_artista,pop,D_pop05_con_tope,3,87c18952-956e-46bf-a4b9-8c13f5a4e3fa,Joan Sebastian,Díganle,low_observed,0.34997,0.335943
+solo_etiquetas_artista,pop,D_pop05_con_tope,4,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.302517,0.319336
+solo_etiquetas_artista,pop,D_pop05_con_tope,5,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.259409,0.290188
+solo_etiquetas_artista,pop,D_pop05_con_tope,6,d5be5333-4171-427e-8e12-732087c6b78e,Black Eyed Peas,Imma Be (Wolfgang Gartner remix),high_observed,0.2591,0.288506
+solo_etiquetas_artista,pop,D_pop05_con_tope,7,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.225487,0.263518
+solo_etiquetas_artista,pop,D_pop05_con_tope,8,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.256818,0.255783
+solo_etiquetas_artista,pop,D_pop05_con_tope,9,7bb60591-46f3-4147-b692-1814a87e832e,Barry Manilow,Fanfare / I’m Comin’ Back,medium_observed,0.241738,0.247706
+solo_etiquetas_artista,pop,D_pop05_con_tope,10,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.227803,0.245579
+solo_etiquetas_artista,rock,A_pop25_sin_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.200135,0.396629
+solo_etiquetas_artista,rock,A_pop25_sin_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.230243,0.391432
+solo_etiquetas_artista,rock,A_pop25_sin_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.197932,0.388032
+solo_etiquetas_artista,rock,A_pop25_sin_tope,4,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.316463,0.379708
+solo_etiquetas_artista,rock,A_pop25_sin_tope,5,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.178426,0.36993
+solo_etiquetas_artista,rock,A_pop25_sin_tope,6,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.268505,0.361101
+solo_etiquetas_artista,rock,A_pop25_sin_tope,7,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.205149,0.358723
+solo_etiquetas_artista,rock,A_pop25_sin_tope,8,b665b768-0d83-4363-950c-31ed39317c15,Van Halen,Best of Both Worlds,high_observed,0.189659,0.340161
+solo_etiquetas_artista,rock,A_pop25_sin_tope,9,650e7db6-b795-4eb5-a702-5ea2fc46c848,Lady Gaga,It’s De‐Lovely,high_observed,0.1427,0.336192
+solo_etiquetas_artista,rock,A_pop25_sin_tope,10,a0327dc2-dc76-44d5-aec6-47cd2dff1469,Counting Crows,Amy Hit the Atmosphere,high_observed,0.174994,0.332634
+solo_etiquetas_artista,rock,B_pop25_con_tope,1,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.200135,0.396629
+solo_etiquetas_artista,rock,B_pop25_con_tope,2,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.230243,0.391432
+solo_etiquetas_artista,rock,B_pop25_con_tope,3,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.197932,0.388032
+solo_etiquetas_artista,rock,B_pop25_con_tope,4,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.316463,0.379708
+solo_etiquetas_artista,rock,B_pop25_con_tope,5,f181961b-20f7-459e-89de-920ef03c7ed0,The Strokes,Ize of the World,high_observed,0.178426,0.36993
+solo_etiquetas_artista,rock,B_pop25_con_tope,6,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.268505,0.361101
+solo_etiquetas_artista,rock,B_pop25_con_tope,7,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.204656,0.30627
+solo_etiquetas_artista,rock,B_pop25_con_tope,8,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.202191,0.297476
+solo_etiquetas_artista,rock,B_pop25_con_tope,9,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.227944,0.229986
+solo_etiquetas_artista,rock,B_pop25_con_tope,10,323ed974-8bf6-4f54-9525-b774a659f805,Johnny Hallyday,Fleurs d’amour et d’amitié,low_observed,0.154121,0.167674
+solo_etiquetas_artista,rock,C_pop05_sin_tope,1,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.316463,0.329112
+solo_etiquetas_artista,rock,C_pop05_sin_tope,2,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.268505,0.287024
+solo_etiquetas_artista,rock,C_pop05_sin_tope,3,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.230243,0.262481
+solo_etiquetas_artista,rock,C_pop05_sin_tope,4,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.200135,0.239434
+solo_etiquetas_artista,rock,C_pop05_sin_tope,5,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.197932,0.235952
+solo_etiquetas_artista,rock,C_pop05_sin_tope,6,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.205149,0.235864
+solo_etiquetas_artista,rock,C_pop05_sin_tope,7,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.227944,0.228352
+solo_etiquetas_artista,rock,C_pop05_sin_tope,8,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.204656,0.224979
+solo_etiquetas_artista,rock,C_pop05_sin_tope,9,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.202191,0.221248
+solo_etiquetas_artista,rock,C_pop05_sin_tope,10,b665b768-0d83-4363-950c-31ed39317c15,Van Halen,Best of Both Worlds,high_observed,0.189659,0.219759
+solo_etiquetas_artista,rock,D_pop05_con_tope,1,d6652e7b-33fe-49ef-8336-4c863b4f996f,The E Street Band,[encore break],medium_observed,0.316463,0.329112
+solo_etiquetas_artista,rock,D_pop05_con_tope,2,d352f5dd-3023-4565-a7bb-52396bf8821d,Buddy Holly,Don Passerby Promo 1,medium_observed,0.268505,0.287024
+solo_etiquetas_artista,rock,D_pop05_con_tope,3,4d5447d7-c61c-4120-ba1b-d7f471d385b9,John Lennon,Cleanup Time,high_observed,0.230243,0.262481
+solo_etiquetas_artista,rock,D_pop05_con_tope,4,5441c29d-3602-4898-b1a1-b77fa23b8e50,David Bowie,African Night Flight,high_observed,0.200135,0.239434
+solo_etiquetas_artista,rock,D_pop05_con_tope,5,6ffb8ea9-2370-44d8-b678-e9237bbd347b,Kings of Leon,My Third House,high_observed,0.197932,0.235952
+solo_etiquetas_artista,rock,D_pop05_con_tope,6,e795e03d-b5d5-4a5f-834d-162cfb308a2c,PJ Harvey,Rid of Me,high_observed,0.205149,0.235864
+solo_etiquetas_artista,rock,D_pop05_con_tope,7,373b3663-ecc3-40c4-9241-838ae8ca34d0,Jovanotti,La cumbia di chi cambia (Internacional),low_observed,0.227944,0.228352
+solo_etiquetas_artista,rock,D_pop05_con_tope,8,8c90ad8c-9150-4c51-a1eb-342232e99d06,The Band,Crying Heart Blues,medium_observed,0.204656,0.224979
+solo_etiquetas_artista,rock,D_pop05_con_tope,9,43b58c98-3779-4b04-9a23-1c95cca3a145,Erasure,Chorus (Pure Trance mix),medium_observed,0.202191,0.221248
+solo_etiquetas_artista,rock,D_pop05_con_tope,10,323ed974-8bf6-4f54-9525-b774a659f805,Johnny Hallyday,Fleurs d’amour et d’amitié,low_observed,0.154121,0.156832

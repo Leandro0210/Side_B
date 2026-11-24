@@ -1,0 +1,123 @@
+{
+  "version": "2.2.0",
+  "records": 576,
+  "unique_recordings": 576,
+  "artists_loaded": 72,
+  "unique_artists_with_recordings": 72,
+  "genre_strata": [
+    "electronic",
+    "hip hop",
+    "indie rock",
+    "latin",
+    "pop",
+    "rock"
+  ],
+  "records_by_genre": {
+    "electronic": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 48,
+      "missing_recording_popularity_pct": 50.0
+    },
+    "hip hop": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 41,
+      "missing_recording_popularity_pct": 42.71
+    },
+    "indie rock": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 54,
+      "missing_recording_popularity_pct": 56.25
+    },
+    "latin": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 49,
+      "missing_recording_popularity_pct": 51.04
+    },
+    "pop": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 59,
+      "missing_recording_popularity_pct": 61.46
+    },
+    "rock": {
+      "recordings": 96,
+      "artists_with_recordings": 12,
+      "missing_recording_popularity": 60,
+      "missing_recording_popularity_pct": 62.5
+    }
+  },
+  "recording_popularity_status": {
+    "available": 265,
+    "not_available": 311
+  },
+  "artist_popularity_status": {
+    "available": 72
+  },
+  "missing_recording_listeners": 311,
+  "missing_recording_listeners_pct": 53.99,
+  "missing_duration": 78,
+  "missing_duration_pct": 13.54,
+  "missing_recording_genres": 499,
+  "missing_recording_genres_pct": 86.63,
+  "effective_genres_available_pct": 100.0,
+  "genre_source_counts": {
+    "recording": 77,
+    "artist_fallback": 499
+  },
+  "title_initial_a_pct": 8.33,
+  "artist_countries": {
+    "US": 31,
+    "SE": 1,
+    "GB": 16,
+    "CA": 1,
+    "FR": 2,
+    "JP": 4,
+    "IT": 2,
+    "DE": 5,
+    "FI": 1,
+    "PR": 1,
+    "ES": 2,
+    "MX": 2,
+    "BR": 2,
+    "DO": 1,
+    "VE": 1
+  },
+  "artist_popularity_groups": {
+    "high_observed": 24,
+    "medium_observed": 24,
+    "low_observed": 24
+  },
+  "group_definition": {
+    "method": "sample_tertiles_of_artist_listeners",
+    "low_threshold": 32116.99999999997,
+    "high_threshold": 151729.3333333333,
+    "n_known_artists": 72,
+    "interpretation": "Terciles relativos a esta muestra, no umbrales universales ni condición de artista emergente"
+  },
+  "valid_candidates_not_selected": 13681,
+  "unselected_by_reason": {
+    "same_title_not_selected": 2791,
+    "sampling_limit": 10890
+  },
+  "exclusions_total": 10,
+  "exclusions_by_reason": {
+    "clearly_nonmusical_title": 10
+  },
+  "warnings_and_errors_count": 0,
+  "limitations": [
+    "No es una muestra representativa de la industria musical.",
+    "sampling_genre es la etiqueta de búsqueda, no el género exclusivo de cada grabación.",
+    "Popularidad ListenBrainz no equivale a popularidad global ni a emergente.",
+    "Un valor faltante de popularidad nunca debe imputarse como cero sin justificación.",
+    "Las etiquetas por grabación pueden faltar; las de artista no sustituyen características acústicas.",
+    "No hay preferencias verificadas de usuarios ni relevancia musical evaluada todavía.",
+    "Las reglas de exclusión de títulos son heurísticas y requieren revisión manual.",
+    "Candidatos musicales con el mismo título no son rechazos de calidad: pueden ser versiones distintas.",
+    "effective_genres usa etiquetas de artista cuando faltan etiquetas de grabación; no implica género verificado por canción.",
+    "Las ventanas exploradas son un subconjunto del catálogo (máximo offset configurable)."
+  ]
+}

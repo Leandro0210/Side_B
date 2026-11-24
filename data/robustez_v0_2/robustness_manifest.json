@@ -1,0 +1,92 @@
+{
+  "date_utc": "2026-11-05T16:38:24.923893+00:00",
+  "source_dataset": "data\\dataset_v1\\side_b_dataset.csv",
+  "dataset_audit": {
+    "recordings": 576,
+    "unique_recordings": 576,
+    "artists": 72,
+    "by_sampling_genre": {
+      "electronic": 96,
+      "hip hop": 96,
+      "indie rock": 96,
+      "latin": 96,
+      "pop": 96,
+      "rock": 96
+    },
+    "missing_recording_listeners": 311,
+    "missing_recording_genres": 499,
+    "genre_source_counts": {
+      "artist_fallback": 499,
+      "recording": 77
+    },
+    "artists_excluded_no_comparable_popularity": 0,
+    "artists_in_experiment": 72,
+    "artists_by_pop_group": {
+      "low_observed": 24,
+      "medium_observed": 24,
+      "high_observed": 24
+    },
+    "artist_country_counts": {
+      "US": 31,
+      "GB": 16,
+      "DE": 5,
+      "JP": 4,
+      "ES": 2,
+      "IT": 2,
+      "FR": 2,
+      "MX": 2,
+      "BR": 2,
+      "PR": 1,
+      "FI": 1,
+      "CA": 1,
+      "DO": 1,
+      "VE": 1,
+      "SE": 1
+    }
+  },
+  "top_k": 10,
+  "profiles": [
+    "electronic",
+    "hip hop",
+    "indie rock",
+    "latin",
+    "pop",
+    "rock"
+  ],
+  "representations": {
+    "original_con_muestreo": "artist_genres + sampling_genre (modelo original)",
+    "solo_etiquetas_artista": "solo artist_genres; sin agregar sampling_genre"
+  },
+  "policies": [
+    {
+      "name": "A_pop25_sin_tope",
+      "popularity_weight": 0.25,
+      "group_cap": false
+    },
+    {
+      "name": "B_pop25_con_tope",
+      "popularity_weight": 0.25,
+      "group_cap": true
+    },
+    {
+      "name": "C_pop05_sin_tope",
+      "popularity_weight": 0.05,
+      "group_cap": false
+    },
+    {
+      "name": "D_pop05_con_tope",
+      "popularity_weight": 0.05,
+      "group_cap": true
+    }
+  ],
+  "warnings": [],
+  "limitations": [
+    "La consulta de perfil (rock/pop/etc.) sigue siendo una etiqueta; no es una preferencia verificada de un oyente.",
+    "La elegibilidad exige similitud textual > 0, no relevancia demostrada.",
+    "La TF-IDF se ajusta por separado en cada representación; las puntuaciones entre representaciones no deben compararse como idéntica escala de relevancia.",
+    "La diferencia entre representaciones es sensibilidad metodológica, no prueba de fuga de datos clásica ni de discriminación.",
+    "Los terciles son relativos al dataset y no equivalen a condición de artista emergente.",
+    "La equidad no implica igual exposición sin tener en cuenta calidad, elegibilidad y objetivos del sistema.",
+    "Sin juicios humanos o interacciones, no podemos afirmar satisfacción, precisión ni utilidad real."
+  ]
+}

@@ -1,0 +1,5 @@
+﻿policy,total_positions,unique_artists_across_profiles,mean_similarity_proxy,positions_low_observed,positions_medium_observed,positions_high_observed
+A_pop25_sin_tope,60,41,0.31043,14,10,36
+B_pop25_con_tope,60,46,0.325951,19,20,21
+C_pop05_sin_tope,60,45,0.339983,24,18,18
+D_pop05_con_tope,60,45,0.335616,22,20,18

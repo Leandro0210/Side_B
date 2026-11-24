@@ -1,0 +1,9 @@
+﻿representation,policy,total_positions,profiles_evaluated,unique_artists_across_profiles,mean_similarity_proxy,positions_low_observed,positions_medium_observed,positions_high_observed
+original_con_muestreo,A_pop25_sin_tope,60,6,41,0.31043,14,10,36
+original_con_muestreo,B_pop25_con_tope,60,6,46,0.325951,19,20,21
+original_con_muestreo,C_pop05_sin_tope,60,6,45,0.339983,24,18,18
+original_con_muestreo,D_pop05_con_tope,60,6,45,0.335616,22,20,18
+solo_etiquetas_artista,A_pop25_sin_tope,59,6,42,0.320928,15,10,34
+solo_etiquetas_artista,B_pop25_con_tope,59,6,46,0.331502,19,18,22
+solo_etiquetas_artista,C_pop05_sin_tope,59,6,43,0.343217,22,19,18
+solo_etiquetas_artista,D_pop05_con_tope,59,6,43,0.340411,21,19,19

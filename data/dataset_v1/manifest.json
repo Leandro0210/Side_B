@@ -1,0 +1,29 @@
+{
+  "project": "SIDE B",
+  "collector_version": "2.2.0",
+  "cached_musicbrainz_responses_reused": 0,
+  "cached_musicbrainz_responses_saved": 293,
+  "musicbrainz_cache_path": "raw/musicbrainz_cache",
+  "collected_at_utc": "2026-11-05T15:05:54+00:00",
+  "seed": 42,
+  "genres": [
+    "rock",
+    "pop",
+    "indie rock",
+    "hip hop",
+    "electronic",
+    "latin"
+  ],
+  "artists_per_genre": 12,
+  "recordings_per_artist": 8,
+  "artist_pages": 2,
+  "recording_pages": 2,
+  "max_recording_offset": 900,
+  "selection_method": "Muestreo pseudoaleatorio reproducible; ventanas aleatorias acotadas; preferencia por títulos distintos al seleccionar",
+  "exclusion_rules": "Solo títulos explícitamente no musicales, registros inválidos y MBIDs repetidos; títulos iguales válidos se registran como no seleccionados",
+  "sources": [
+    "https://musicbrainz.org",
+    "https://api.listenbrainz.org"
+  ],
+  "notes": "No hay historial ni identificadores de oyentes individuales; no incluye contacto personal del recolector"
+}

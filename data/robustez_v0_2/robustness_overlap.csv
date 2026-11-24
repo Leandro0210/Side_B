@@ -1,0 +1,25 @@
+﻿profile,policy,original_n,without_sampling_n,shared_artists,jaccard_overlap,same_position_count
+electronic,A_pop25_sin_tope,10,10,8,0.6666666666666666,0
+electronic,B_pop25_con_tope,10,10,7,0.5384615384615384,1
+electronic,C_pop05_sin_tope,10,10,8,0.6666666666666666,1
+electronic,D_pop05_con_tope,10,10,8,0.6666666666666666,1
+hip hop,A_pop25_sin_tope,10,10,10,1.0,10
+hip hop,B_pop25_con_tope,10,10,10,1.0,10
+hip hop,C_pop05_sin_tope,10,10,10,1.0,10
+hip hop,D_pop05_con_tope,10,10,10,1.0,10
+indie rock,A_pop25_sin_tope,10,10,10,1.0,10
+indie rock,B_pop25_con_tope,10,10,9,0.8181818181818182,8
+indie rock,C_pop05_sin_tope,10,10,10,1.0,10
+indie rock,D_pop05_con_tope,10,10,9,0.8181818181818182,8
+latin,A_pop25_sin_tope,10,9,7,0.5833333333333334,2
+latin,B_pop25_con_tope,10,9,8,0.7272727272727273,4
+latin,C_pop05_sin_tope,10,9,7,0.5833333333333334,2
+latin,D_pop05_con_tope,10,9,8,0.7272727272727273,4
+pop,A_pop25_sin_tope,10,10,9,0.8181818181818182,8
+pop,B_pop25_con_tope,10,10,9,0.8181818181818182,7
+pop,C_pop05_sin_tope,10,10,9,0.8181818181818182,8
+pop,D_pop05_con_tope,10,10,9,0.8181818181818182,8
+rock,A_pop25_sin_tope,10,10,10,1.0,10
+rock,B_pop25_con_tope,10,10,10,1.0,10
+rock,C_pop05_sin_tope,10,10,10,1.0,8
+rock,D_pop05_con_tope,10,10,10,1.0,8
