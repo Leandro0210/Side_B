@@ -20,6 +20,7 @@ from side_b_dashboard_core import (
     GROUPS, GROUP_LABELS, POLICIES, REPRESENTATIONS, SideBEngine
 )
 from validar_integral_side_b import run_audit, markdown_report
+from simular_participantes import summary_tables as synthetic_demo_tables
 
 ROOT = Path(__file__).resolve().parent
 ENGINE = SideBEngine(ROOT)
@@ -221,6 +222,16 @@ def _eval_tables():
     return real, simulated, _evaluation_note(real, simulated)
 
 
+def _synthetic_named_demo():
+    """Genera la demostración sin tocar los archivos de evaluaciones humanas."""
+    detail, aggregate = synthetic_demo_tables()
+    note = ("**SIMULADO — 5 personajes con nombres inventados, 0 personas encuestadas.** "
+            "Las puntuaciones se generaron por código sobre pop y rock. "
+            "No indican escucha real, satisfacción ni preferencia humana. "
+            "Para exportar CSV locales sintéticos: `python simular_participantes.py`.")
+    return detail, aggregate, note
+
+
 def _integral_diagnostic():
     return markdown_report(run_audit(ROOT))
 
@@ -353,6 +364,15 @@ def create_app():
                         real=gr.Dataframe(label="Datos humanos reales · P01",value=ENGINE.evaluation(False),interactive=False)
                         simulated=gr.Dataframe(label="Simulación · NO son personas",value=ENGINE.evaluation(True),interactive=False)
                     gr.Button("Actualizar resultados").click(_eval_tables,outputs=[real,simulated,evaluation_state])
+                    with gr.Accordion("Probar con 5 personajes ficticios (simulación)",open=False):
+                        gr.Markdown("**DEMOSTRACIÓN SINTÉTICA — no son personas encuestadas.** "
+                                    "Nombres inventados, valoraciones automáticas diferentes y mismo catálogo A/C. "
+                                    "No se guarda ninguna respuesta humana ni se modifica el dataset.")
+                        synth_btn=gr.Button("Simular ahora",variant="secondary")
+                        synth_note=gr.Markdown()
+                        synth_people=gr.Dataframe(label="Personajes y puntuaciones inventadas · NO HUMANOS",interactive=False)
+                        synth_means=gr.Dataframe(label="Resumen generado automáticamente · SIMULADO",interactive=False)
+                        synth_btn.click(_synthetic_named_demo,outputs=[synth_people,synth_means,synth_note])
                     gr.Markdown("Una sola persona no permite afirmar que un algoritmo es mejor. Las puntuaciones simuladas jamás se deben usar como evidencia académica.")
                 with gr.Accordion("Validación integral reproducible · v0.6",open=False):
                     gr.Markdown("Ejecuta las verificaciones técnicas **sin modificar el dataset**. "

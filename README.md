@@ -78,3 +78,10 @@ El diagnóstico comprueba SHA-256, reproduce **48 escenarios** de los cuatro mod
 **Datos de evaluación:** el repositorio público no distribuye las valoraciones individuales reales ni simuladas. En una instalación sin resúmenes locales autorizados, las tablas aparecen vacías con una explicación explícita; no deben rellenarse artificialmente. El diagnóstico señala evaluación humana ampliada como **PENDIENTE**. El despliegue público **no está aprobado**.
 
 Resultados y límites: [`docs/informes/VALIDACION_INTEGRAL_V06.md`](docs/informes/VALIDACION_INTEGRAL_V06.md).
+
+
+## Demostración con personajes ficticios (v0.7)
+
+SIDE B incluye **cinco personajes de prueba con nombres inventados** (Valeria, Mateo, Lucía, Diego y Camila). No son personas encuestadas: la aplicación genera 140 puntuaciones sintéticas sobre pop/rock de forma determinista y **marcada como SIMULADO en todos los registros**.
+
+Puedes probarlo sin guardar nada desde **Auditoría ética → Evaluación humana y simulación → Probar con 5 personajes ficticios → Simular ahora**. Para generar CSV de prueba *solo en la carpeta privada excluida de Git*: `python simular_participantes.py`. **Nunca** se mezclan estas cifras con respuestas reales ni se presentan como evidencia empírica. Consulta [`docs/informes/SIMULACION_FICTICIA_V07.md`](docs/informes/SIMULACION_FICTICIA_V07.md). El paper académico sigue pendiente de estudios humanos reales y de la plantilla docente.
