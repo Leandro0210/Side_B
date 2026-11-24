@@ -1,0 +1,23 @@
+# Entornos y archivos temporales
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.gradio/
+.env
+*.env
+*.zip
+.DS_Store
+
+# Evaluaciones individuales y claves internas: jamás subir a GitHub
+simulacion/
+data/validacion_humana_v0_3/
+data/supervision/
+
+# Tráfico/volcados crudos de las APIs y registros locales
+archivo_historico/
+data/dataset_v1/raw/
+data/dataset_v1/unselected_recordings.csv
+
+# Artefactos regenerables y temporales no documentados
+*.log

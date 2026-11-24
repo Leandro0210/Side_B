@@ -1,0 +1,67 @@
+{
+  "recordings": 576,
+  "unique_recordings": 576,
+  "artists": 72,
+  "by_sampling_genre": {
+    "electronic": 96,
+    "hip hop": 96,
+    "indie rock": 96,
+    "latin": 96,
+    "pop": 96,
+    "rock": 96
+  },
+  "missing_recording_listeners": 311,
+  "missing_recording_genres": 499,
+  "genre_source_counts": {
+    "artist_fallback": 499,
+    "recording": 77
+  },
+  "artists_excluded_no_comparable_popularity": 0,
+  "artists_in_experiment": 72,
+  "artists_by_pop_group": {
+    "low_observed": 24,
+    "medium_observed": 24,
+    "high_observed": 24
+  },
+  "artist_country_counts": {
+    "US": 31,
+    "GB": 16,
+    "DE": 5,
+    "JP": 4,
+    "ES": 2,
+    "IT": 2,
+    "FR": 2,
+    "MX": 2,
+    "BR": 2,
+    "PR": 1,
+    "FI": 1,
+    "CA": 1,
+    "DO": 1,
+    "VE": 1,
+    "SE": 1
+  },
+  "date_utc": "2026-11-05T15:42:24.911705+00:00",
+  "source_file": "data\\dataset_v1\\side_b_dataset.csv",
+  "profiles": [
+    "electronic",
+    "hip hop",
+    "indie rock",
+    "latin",
+    "pop",
+    "rock"
+  ],
+  "top_k": 10,
+  "method": "TF-IDF sobre etiquetas del artista y género de muestreo, similitud coseno; una grabación ilustrativa por artista",
+  "baseline": "0.75*similitud + 0.25*percentil_popularidad",
+  "mitigation": "0.95*similitud + 0.05*percentil_popularidad, máximo ceil(K/3) por tercil cuando es posible",
+  "exposure_metric": "sum(1/log2(posicion+1)) por grupo, normalizada por exposición total en top K",
+  "caveats": [
+    "No se han recogido preferencias reales ni juicios de relevancia.",
+    "La similitud calculada no es una medida validada de calidad de recomendaciones.",
+    "Los terciles de popularidad son relativos al dataset de esta ejecución.",
+    "Los géneros del artista no describen necesariamente cada grabación.",
+    "Comparar cantidad de recomendaciones no demuestra discriminación ni injusticia por sí solo.",
+    "La intervención propuesta es ilustrativa y debe evaluarse ante otras preferencias, umbrales y poblaciones.",
+    "No interpretar los resultados como auditoría de plataformas comerciales reales."
+  ]
+}

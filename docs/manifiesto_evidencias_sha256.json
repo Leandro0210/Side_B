@@ -1,0 +1,11 @@
+{
+  "format": "SIDE_B_RESEARCH_EVIDENCE_SHA256_V1",
+  "description": "Integridad de datos y resultados previos; las decisiones del auditor se guardan aparte.",
+  "files": {
+    "data/dataset_v1/side_b_dataset.csv": "b7048a6872c3f897e01eb2061d7a818c4e6c73fea5dfd906f5e4d5cec3421b40",
+    "data/dataset_v1/quality_report.json": "a46fc0a9635a734ebaf5dbd2981cc588acc7799982c060e91c96074b96986996",
+    "data/model_v0/recommendations.csv": "63e147edc2e398ee33a4b3c2f577ffb5f230c84fc339c64c1ef34bb535ca83e3",
+    "data/auditoria_v0_1/ablation_overall.csv": "2b0fa56aea164ab098c446fc2f42f3061bbb2882269a46820f55ed60ed5ea394",
+    "data/robustez_v0_2/robustness_overall.csv": "b1120388cd391322c0997c8b7eda4ca718a4d520af53391d9a4105ef26f87663"
+  }
+}

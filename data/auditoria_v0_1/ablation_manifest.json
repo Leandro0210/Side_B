@@ -1,0 +1,94 @@
+{
+  "purpose": "Ablación de popularidad (5% vs 25%) y tope por grupo (sí/no) por separado",
+  "inputs": {
+    "dataset": "data\\dataset_v1\\side_b_dataset.csv",
+    "reference": "data\\model_v0\\recommendations.csv"
+  },
+  "catalog_audit": {
+    "recordings": 576,
+    "unique_recordings": 576,
+    "artists": 72,
+    "by_sampling_genre": {
+      "electronic": 96,
+      "hip hop": 96,
+      "indie rock": 96,
+      "latin": 96,
+      "pop": 96,
+      "rock": 96
+    },
+    "missing_recording_listeners": 311,
+    "missing_recording_genres": 499,
+    "genre_source_counts": {
+      "artist_fallback": 499,
+      "recording": 77
+    },
+    "artists_excluded_no_comparable_popularity": 0,
+    "artists_in_experiment": 72,
+    "artists_by_pop_group": {
+      "low_observed": 24,
+      "medium_observed": 24,
+      "high_observed": 24
+    },
+    "artist_country_counts": {
+      "US": 31,
+      "GB": 16,
+      "DE": 5,
+      "JP": 4,
+      "ES": 2,
+      "IT": 2,
+      "FR": 2,
+      "MX": 2,
+      "BR": 2,
+      "PR": 1,
+      "FI": 1,
+      "CA": 1,
+      "DO": 1,
+      "VE": 1,
+      "SE": 1
+    }
+  },
+  "top_k": 10,
+  "profiles": [
+    "electronic",
+    "hip hop",
+    "indie rock",
+    "latin",
+    "pop",
+    "rock"
+  ],
+  "policies": [
+    [
+      "A_pop25_sin_tope",
+      0.25,
+      false
+    ],
+    [
+      "B_pop25_con_tope",
+      0.25,
+      true
+    ],
+    [
+      "C_pop05_sin_tope",
+      0.05,
+      false
+    ],
+    [
+      "D_pop05_con_tope",
+      0.05,
+      true
+    ]
+  ],
+  "reference_check": {
+    "comparison_positions": 120,
+    "mismatches": 0,
+    "mismatch_examples": []
+  },
+  "limitations": [
+    "Perfiles construidos a partir de géneros de muestreo, no oyentes reales",
+    "Eligibilidad basada en similitud > 0, no en relevancia confirmada",
+    "Los terciles son relativos a una muestra con sesgo de origen",
+    "La posición y el tope por grupo no prueban por sí solos equidad normativa",
+    "Una canción por artista es solo ilustrativa; el modelo puntúa artistas",
+    "La matriz no es una evaluación de plataformas comerciales"
+  ]
+}
