@@ -19,6 +19,7 @@ from side_b_dashboard_core import (
     GROUPS, GROUP_LABELS, POLICIES, REPRESENTATIONS, SideBEngine
 )
 from validar_integral_side_b import run_audit, markdown_report
+from side_b_risk_register import load_risks, evaluate_risks, risk_markdown
 
 ROOT = Path(__file__).resolve().parent
 ENGINE = SideBEngine(ROOT)
@@ -260,7 +261,17 @@ def _oversight_history(access_token):
 
 
 def _risk_table():
-    return pd.read_csv(ROOT / "docs" / "matriz_riesgos.csv").fillna("")
+    """Vista breve; el diagnóstico de los controles se ejecuta a petición."""
+    risks = load_risks(ROOT)
+    return pd.DataFrame([{
+        "ID": r["id"], "Riesgo": r["riesgo"],
+        "Prioridad inicial": f"{r['prioridad_estimada']}/25 ({r['severidad']})",
+        "Responsable": r["responsable_rol"], "Próximo paso": r["accion_pendiente"]
+    } for r in risks])
+
+
+def _risk_diagnostic():
+    return risk_markdown(evaluate_risks(ROOT))
 
 
 def _robustness(profile,representation_name):
@@ -442,13 +453,21 @@ def create_app():
 **Límites:** una clave compartida no ofrece identidades verificadas ni protección frente a alguien con acceso completo a la computadora y la clave. La cadena detecta cambios intermedios, pero no garantiza detectar que alguien borró el archivo completo o su tramo final. No desplegar públicamente sin autenticación real, respaldos y controles de acceso.
 
 **Equidad:** popularidad baja no equivale a artista emergente. TF-IDF de géneros no equivale a preferencia humana. Las recomendaciones ilustrativas pueden ser grabaciones no musicales.""")
-                    gr.Markdown("**Matriz de riesgos y responsabilidades (prioridades iniciales)**")
+                    gr.Markdown("**Riesgos y responsabilidades:** las puntuaciones reflejan una valoración inicial, "
+                                "no frecuencias medidas. Ningún control técnico elimina por sí solo un riesgo ético.")
                     gr.Markdown("**Privacidad y explicaciones:** la app no solicita cuentas de streaming; los perfiles no se almacenan. "
                                 "El desglose del ranking puede verse en Descubrir música → ¿Por qué aparecen estos artistas? "
                                 "Las respuestas individuales son privadas; los relatos cualitativos no equivalen a puntuaciones completas por canción. "
                                 "Consulta `docs/PRIVACIDAD_EXPLICABILIDAD.md` antes de compartir o publicar resultados.")
-                    gr.Dataframe(value=_risk_table(),label="Riesgos de SIDE B",interactive=False)
-                    gr.Markdown("La probabilidad y el impacto son estimaciones cualitativas del equipo, **no** frecuencias medidas. Ver `docs/informes/CONTROLES_ETICOS_SEGURIDAD.md` y las pruebas automatizadas.")
+                    gr.Markdown("**Prioridades iniciales** (ordenadas de mayor a menor):")
+                    gr.Dataframe(value=_risk_table(),label="Registro de riesgos y tareas",interactive=False)
+                    check_risk_button=gr.Button("Verificar controles y tareas pendientes",variant="secondary")
+                    check_risk_result=gr.Markdown()
+                    check_risk_button.click(_risk_diagnostic,outputs=check_risk_result)
+                    gr.Markdown("**Cómo interpretarlo:** `PARCIAL` significa que existen controles técnicos "
+                                "pero quedan medidas pendientes; `PENDIENTE` exige comprobación adicional; "
+                                "`FALLA` requiere corregir una prueba. El despliegue público no está autorizado. "
+                                "Ver `docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md`.")
         gr.Markdown("<small>SIDE B · Prototipo académico local · Sin reproducción de audio · Sin acceso a cuentas de música.</small>")
     return app
 

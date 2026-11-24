@@ -39,7 +39,7 @@ Pruebas específicas `tests/test_security_controls.py`: clave ausente; clave inc
 
 ## 5. Matriz de riesgos
 
-La matriz `docs/matriz_riesgos.csv` identifica afectados, probabilidad (1–5), impacto (1–5), prioridad estimada (producto), medida y estado. Las puntuaciones son **estimaciones cualitativas**, no estadísticas medidas. Riesgos residuales: sesgo de selección geográfica, datos musicales faltantes, grabaciones ambiguas, privacidad de futuros voluntarios, protección de la clave y pérdida del historial.
+El registro `docs/matriz_riesgos.csv` tiene once riesgos con responsables funcionales, verificación técnica cuando existe y acciones residuales. Las puntuaciones son **estimaciones cualitativas**, no estadísticas medidas. **Las verificaciones no declaran riesgos cerrados** y no habilitan despliegue. Consulta `docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md` y ejecuta `python side_b_risk_register.py`.
 
 ## 6. Privacidad y custodia
 

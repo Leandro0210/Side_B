@@ -9,10 +9,12 @@
 
 
 - `informes/CONTROLES_ETICOS_SEGURIDAD.md`: amenazas, supervisión, limitaciones y evidencia de pruebas.
-- `matriz_riesgos.csv`: priorización cualitativa de nueve riesgos del prototipo.
+- `matriz_riesgos.csv`: priorización cualitativa de once riesgos con responsables, evidencias y medidas pendientes.
 - `manifiesto_evidencias_sha256.json`: huellas de las evidencias científicas no modificadas.
 
 - [Privacidad y explicabilidad](PRIVACIDAD_EXPLICABILIDAD.md): controles, alcance, fórmula y límites.
 - `informes/ESTUDIO_EXPLORATORIO_V08.md`: nueve relatos agregados y límites de su uso.
 
 - `informes/CALIDAD_CATALOGO_V09.md`: revisión de canciones ilustrativas, cinco incidencias y límites de validación.
+
+- `informes/MATRIZ_RIESGOS_MITIGACION_V010.md`: criterios, trazabilidad y decisión provisional de despliegue.
