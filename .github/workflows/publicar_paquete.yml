@@ -1,0 +1,46 @@
+name: Publicar SIDE B desde paquete revisado
+on:
+  push:
+    branches: [feat/publicacion-segura-side-b-v05]
+    paths:
+      - 'bootstrap_parts/**'
+      - '.github/workflows/publicar_paquete.yml'
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Expandir paquete seguro
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64, io, lzma, tarfile
+          parts = sorted(Path('bootstrap_parts').glob('part-*.txt'))
+          assert parts, 'Faltan partes del archivo.'
+          encoded = ''.join(p.read_text().strip() for p in parts)
+          archive = lzma.decompress(base64.b64decode(encoded, validate=True))
+          root = Path('.').resolve()
+          with tarfile.open(fileobj=io.BytesIO(archive), mode='r:') as tar:
+              for member in tar.getmembers():
+                  candidate = (root / member.name).resolve()
+                  if not candidate.is_relative_to(root) or not member.isfile():
+                      raise ValueError(f'Entrada de paquete no permitida: {member.name}')
+              tar.extractall(path=root, filter='data')
+          print(f'Extraídos {len(parts)} fragmentos.')
+          PY
+      - name: Comprobar privacidad
+        run: |
+          test ! -e data/validacion_humana_v0_3/ratings/P01.csv
+          test ! -e data/supervision
+          test ! -e .venv
+      - name: Registrar código verificado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: incorporar aplicación Gradio, datos públicos y pruebas" || exit 0
+          git push origin HEAD:${{ github.ref_name }}
