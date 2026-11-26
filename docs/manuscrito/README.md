@@ -5,7 +5,7 @@
 
 ## Nota de versión
 
-La versión PDF corregida en la revisión del 26 de noviembre de 2026 debe sustituir al PDF anterior en esta misma ruta. Hasta realizar esa sustitución, el PDF publicado corresponde a la revisión del 24 de noviembre.
+El PDF publicado corresponde a la revisión del 26 de noviembre de 2026, incorporada en el commit `1e063bd`. Es la versión destinada a la evaluación docente. El Word permanece como referencia editorial anterior, no como versión definitiva.
 
 ## Alcance editorial
 
