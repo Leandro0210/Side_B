@@ -1,18 +1,12 @@
-# SIDE B — manuscrito revisado según plantilla Revista 3i
+# SIDE B — manuscrito académico
 
-Se actualizan el Word y PDF definitivos con correcciones de **tipografía, tamaño, interlineado, sangrías, geometría de la columna, referencias y paginación** basadas en el PDF original de seis páginas de la plantilla.
+- [PDF del artículo](SIDE_B_Articulo_Cientifico_Revista_3i.pdf): archivo destinado a la evaluación docente. Comprobar la fecha y la autoría de la portada para identificar la revisión.
+- [Word de referencia](SIDE_B_Articulo_Cientifico_Revista_3i.docx): revisión editorial anterior (24 de noviembre de 2026), no sincronizada con las correcciones posteriores del PDF.
 
-## Comprobaciones materiales
-- 10 páginas A4: cumple la extensión de **6 a 12 páginas**.
-- Columna de cuerpo desde ~79,6 hasta ~450,1 puntos PDF; resumen y resúmenes traducidos con sangría izquierda adicional ~24,9 puntos.
-- Estilos de Word: Arial 9,5 pt en cuerpo y referencias (aproximación de medio punto a Arial 9,6 pt medido en el PDF original); título Arial 11 pt; encabezado Arial 12,5 pt.
-- Títulos en español, inglés y portugués, seguidos de Resumen (154 palabras), Abstract (131) y Resumo (146), **sin citas** y cada uno con tres palabras clave.
-- Texto normal, encabezados y referencias: interlineado **1,5**; referencias con sangría francesa; tablas a línea sencilla y notas a 8 pt como en el modelo.
-- Cinco tablas científicas editables, tres figuras PNG con títulos en español y 13 referencias académicas con DOI.
-- Notas con solo `Nota.` en cursiva; títulos de figuras y tablas formateados según APA; ninguna referencia partida entre páginas y sin páginas finales casi vacías.
-- Se conservan el corpus de 72 artistas, 576 grabaciones y las cuatro políticas A/B/C/D.
+## Nota de versión
 
-## Campos que no deben inventarse
-Pendientes de confirmación: autoría/orden, universidad, facultad, correo institucional, ORCID, fecha de envío, declaración real de financiación, conflicto de intereses y consentimientos. La plantilla también exige control institucional de similitud ≤25 %, **no certificado mediante esta revisión**.
+La versión PDF corregida en la revisión del 26 de noviembre de 2026 debe sustituir al PDF anterior en esta misma ruta. Hasta realizar esa sustitución, el PDF publicado corresponde a la revisión del 24 de noviembre.
 
-Al partir de una plantilla disponible solo en PDF, la versión Word reproduce medidas observables; no es posible garantizar equivalencia exacta de los estilos internos del DOCX fuente sin ese archivo.
+## Alcance editorial
+
+El estudio conserva 72 artistas, 576 grabaciones y cuatro políticas A/B/C/D. La versión revisada para evaluación académica contiene limitaciones explícitas: no acredita consentimiento documentado, satisfacción humana ni equidad universal. La publicación formal requiere verificar el consentimiento aplicable o excluir los relatos, completar el ORCID, los resúmenes en tres idiomas y el control de similitud, y comprobar las propiedades del documento editable. No se certifica cumplimiento editorial íntegro de Revista 3i.

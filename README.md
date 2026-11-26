@@ -1,8 +1,78 @@
 > **Repositorio público:** no añadir `.venv`, claves, respuestas individuales de participantes, historial de supervisión ni archivos `private/`. No distribuir esos datos en archivos públicos. El manuscrito académico está disponible en `docs/manuscrito/`.
 
-# SIDE B — Gradio simplificado
+# SIDE B — Auditoría ética de un recomendador musical
 
-**SIDE B** es un prototipo universitario para investigar el peso de la popularidad en la exposición de artistas de un recomendador musical. Esta versión **simplifica la interfaz** sin cambiar el dataset, los algoritmos ni los resultados de auditoría.
+Proyecto final de **Aspectos Éticos y Sociales de la Inteligencia Artificial** — Ingeniería en Inteligencia Artificial, Universidad Católica Boliviana «San Pablo», sede Santa Cruz.
+
+SIDE B permite investigar cómo el peso de la popularidad modifica la exposición de artistas, comparar cuatro políticas de recomendación y analizar sus riesgos éticos mediante una interfaz local en Gradio.
+
+## Guía rápida para la evaluación docente
+
+### Entregables
+
+| Recurso | Acceso |
+|---|---|
+| Artículo científico (PDF) | [Abrir manuscrito](docs/manuscrito/SIDE_B_Articulo_Cientifico_Revista_3i.pdf) |
+| Notas de versión del manuscrito | [Documentación editorial](docs/manuscrito/README.md) |
+| Dataset (576 grabaciones y 72 artistas) | [CSV](data/dataset_v1/side_b_dataset.csv) · [Diccionario](docs/DICCIONARIO_DATOS.md) |
+| Resultados de las cuatro políticas | [Ablación](data/auditoria_v0_1/ablation_overall.csv) · [Por perfil](data/auditoria_v0_1/ablation_by_profile.csv) · [Robustez](data/robustez_v0_2/robustness_overall.csv) |
+| Auditoría ética | [Dictamen](docs/informes/DICTAMEN_ETICO_V011.md) · [Matriz de riesgos](docs/matriz_riesgos.csv) · [Rúbrica](docs/informes/REVISION_FINAL_RUBRICA_V012.md) |
+| Pruebas automatizadas | [GitHub Actions](https://github.com/Leandro0210/Side_B/actions) |
+
+### 1. Instalar y ejecutar desde cero
+
+Requisitos: Git, Python 3.12 (versión probada por CI), conexión a Internet para instalar dependencias y un navegador. No se necesitan cuentas externas ni claves API para ejecutar la demostración con el dataset incluido.
+
+En Windows (PowerShell):
+
+```powershell
+git clone https://github.com/Leandro0210/Side_B.git
+cd Side_B
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe app_gradio.py
+```
+
+En Linux/macOS, con Python 3.12 instalado:
+
+```bash
+git clone https://github.com/Leandro0210/Side_B.git
+cd Side_B
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python app_gradio.py
+```
+
+Abrir **http://127.0.0.1:7860**. Detener con Ctrl+C. No activar el acceso público de Gradio.
+
+### 2. Recorrido sugerido
+
+1. En **Descubrir música**, elegir un género y consultar por qué aparecen los artistas.
+2. En **Comparar algoritmos**, comparar A (25 % de popularidad) y C (5 %); consultar la distribución por terciles y la similitud de etiquetas. Explorar también B y D.
+3. En **Auditoría ética**, revisar robustez, privacidad, riesgos y validación integral. La supervisión es de solo lectura salvo que se configure una clave local; su procedimiento está en [controles de seguridad](docs/informes/CONTROLES_ETICOS_SEGURIDAD.md).
+
+### 3. Reproducir las comprobaciones
+
+Desde la raíz, con el entorno virtual activado (PowerShell: `.\.venv\Scripts\Activate.ps1`; Linux/macOS: `source .venv/bin/activate`), ejecutar:
+
+```bash
+python -m unittest discover -s tests -v
+python verificar_evidencias.py
+python validar_integral_side_b.py
+python side_b_catalog_quality.py
+python side_b_risk_register.py
+python side_b_ethics_closure.py
+python side_b_rubric_review.py
+python generar_figuras_paper.py --check
+```
+
+Si PowerShell impide activar el entorno, sustituir `python` por `.\.venv\Scripts\python.exe` en cada comando. La ausencia de una muestra privada opcional puede causar una prueba omitida; no se publican evaluaciones individuales. Las comprobaciones no requieren recolectar nuevamente el dataset.
+
+### Resultado central y alcance
+
+En seis perfiles con 60 puestos por política, A asigna 36/60 (60 %) al tercil alto y C 18/60 (30 %). Este cambio descriptivo de 30 puntos porcentuales no acredita satisfacción humana, justicia universal ni impacto social observado. El sistema es un prototipo académico local; no está autorizado para despliegue público. Los relatos agregados requieren verificar el consentimiento aplicable antes de su difusión formal.
+
+---
 
 ## Abrir la aplicación
 
@@ -18,7 +88,7 @@ Abre `http://127.0.0.1:7860` si el navegador no se abre automáticamente. Para c
 
 Si ya tienes SIDE B con GitHub y las dependencias instaladas, detén Gradio y actualiza tu copia local de `master` con `git pull`. Esta etapa incorpora archivos adicionales a `app_gradio.py`; no basta con reemplazar solo la interfaz. No necesitas recrear `.venv`.
 
-## Navegación nueva (tres pestañas)
+## Navegación (tres pestañas)
 
 1. **🎧 Descubrir música:** elige un estilo musical; explora artistas sin entrar en parámetros científicos. La opción predeterminada es el modelo C (menos peso de popularidad). Puedes cambiar al A para ver un ranking con mayor peso de popularidad.
 2. **⚖️ Comparar algoritmos:** compara por defecto A frente a C. Muestra primero un gráfico y una explicación breve; las tablas técnicas quedan dentro de una sección desplegable.
@@ -119,4 +189,4 @@ Para comprobar la revisión, las figuras reproducibles y sus fuentes:
 - [Plan de figuras y tablas del paper](docs/guias/PLAN_FIGURAS_TABLAS_PAPER.md)
 - [Guía de formato Revista 3i](docs/guias/FORMATO_PAPER_REVISTA_3I.md)
 
-**Manuscrito académico:** consulta la [versión Word y PDF versionada](docs/manuscrito/) y sus [notas editoriales](docs/manuscrito/README.md). La versión del repositorio corresponde a la revisión editorial del 24 de noviembre de 2026; las correcciones posteriores del PDF se mantienen fuera del repositorio hasta su incorporación explícita. No incorporar puntuaciones humanas que no fueron registradas, no afirmar consentimientos inexistentes ni autorizar despliegue público.
+**Manuscrito académico:** consulta la [versión Word y PDF versionada](docs/manuscrito/) y sus [notas editoriales](docs/manuscrito/README.md). El PDF de entrega se mantiene en la ruta indicada en la guía rápida. El Word versionado corresponde a una revisión anterior y no representa necesariamente la última versión del PDF; consultar las notas de versión. No incorporar puntuaciones humanas que no fueron registradas, no afirmar consentimientos inexistentes ni autorizar despliegue público.
