@@ -8,4 +8,4 @@
 - Se reforzó `.gitignore` para prevenir publicación accidental de datos privados y sesiones locales.
 - Los resultados científicos originales y el dataset fuente permanecen intactos.
 
-**Limitaciones**: demostración académica local; no verificación de preferencias a gran escala; las evaluaciones sintéticas no son testimonios humanos.
+**Limitaciones**: demostración académica local; no verificación de preferencias a gran escala; la evidencia pública de recepción consiste en relatos agregados y no permite calcular una comparación humana pareada.

@@ -44,6 +44,6 @@ Estas proporciones describen **exposición entre los puestos del ranking** y no 
 - La revisión de metadatos v0.9 ya evita enseñar como canciones cinco ejemplos originales no aptos (cuatro con alternativa del mismo artista y uno sin ejemplo). **La escucha verificable y la revisión editorial siguen pendientes.** Véase `CALIDAD_CATALOGO_V09.md`.
 - No publicar formularios individuales ni claves de asignación. Los nueve relatos recibidos son cualitativos e indirectos: no permiten inferir preferencias cuantitativas A/C.
 
-**Siguiente evidencia humana:** invitar participantes voluntarios con consentimiento, mostrar grabaciones comprobadas y registrar la valoración real de forma seudonimizada; documentar limitaciones de muestra y análisis. El informe en formato paper se redactará al final con la plantilla de la asignatura.
+**Siguiente evidencia humana:** invitar participantes voluntarios con consentimiento, mostrar grabaciones comprobadas y registrar la valoración real de forma seudonimizada; documentar limitaciones de muestra y análisis. El manuscrito posterior, preparado con la plantilla de la asignatura, está en `docs/manuscrito/`.
 
 **Control técnico ampliado en v0.9:** `calidad_grabaciones_ilustrativas` valida el origen de la alternativa y muestra `PENDIENTE` cuando hay artistas sin canción apta. No afecta el dictamen sobre preferencias reales.

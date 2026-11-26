@@ -46,7 +46,7 @@ python validar_integral_side_b.py
 | Presentación y demostración local | **Apta con limitaciones explícitas**: mostrar el funcionamiento y los resultados descriptivos, sin afirmar equidad demostrada |
 | Selección de política para implementación comercial | **No determinada**: C es un comparador de interés, no una política ganadora validada con usuarios |
 | Despliegue público o uso autónomo | **No autorizado**: controles de seguridad, participación y evidencia insuficientes |
-| Manuscrito académico | **Pendiente de redacción final**: consultar `docs/guias/FORMATO_PAPER_REVISTA_3I.md` y mantener consistencia entre tablas, métodos y conclusiones |
+| Manuscrito académico | **Manuscrito versionado posteriormente**: consultar `docs/manuscrito/` y mantener consistencia entre tablas, métodos y conclusiones |
 
 ## Alcance del dictamen
 

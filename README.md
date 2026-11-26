@@ -1,4 +1,4 @@
-> **Repositorio público:** no añadir `.venv`, claves, respuestas individuales de participantes, historial de supervisión ni archivos `private/`. El ZIP local puede contener estos datos; Git los excluye. El paper será la última etapa.
+> **Repositorio público:** no añadir `.venv`, claves, respuestas individuales de participantes, historial de supervisión ni archivos `private/`. No distribuir esos datos en archivos públicos. El manuscrito académico está disponible en `docs/manuscrito/`.
 
 # SIDE B — Gradio simplificado
 
@@ -51,7 +51,7 @@ La **edición está deshabilitada por defecto** hasta configurar `SIDEB_REVIEW_T
 Lee `docs/informes/CONTROLES_ETICOS_SEGURIDAD.md` antes de crear decisiones reales de auditoría.
 
 **IMPORTANTE:** si ya tienes un registro de decisiones de versiones anteriores sin firma HMAC, guárdalo aparte antes de actualizar; esta versión no lo acepta ni lo sobreescribe automáticamente. Mantén una única instancia local de SIDE B abierta.
-La plantilla Revista 3i fue recibida; el paper se redactará al finalizar la revisión de evidencias.
+El manuscrito académico basado en la plantilla Revista 3i está disponible en [`docs/manuscrito/`](docs/manuscrito/); la revisión editorial final se realiza por separado.
 
 Comprueba que las evidencias del dataset y experimentos anteriores siguen intactas:
 
@@ -102,7 +102,7 @@ Desde Gradio abre **Auditoría ética → Privacidad, riesgos y límites** y pul
 .\.venv\Scripts\python.exe side_b_risk_register.py --out resultados_riesgos
 ```
 
-El informe reproducible y la decisión de **no desplegar públicamente** están en [`docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md`](docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md). Ningún riesgo se considera eliminado automáticamente; se necesita evidencia humana y una revisión de gobernanza para reevaluar el despliegue. El paper sigue reservado para la etapa final.
+El informe reproducible y la decisión de **no desplegar públicamente** están en [`docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md`](docs/informes/MATRIZ_RIESGOS_MITIGACION_V010.md). Ningún riesgo se considera eliminado automáticamente; se necesita evidencia humana y una revisión de gobernanza para reevaluar el despliegue.
 
 ## Revisión final de la rúbrica y recursos para el paper (v0.12)
 
@@ -119,4 +119,4 @@ Para comprobar la revisión, las figuras reproducibles y sus fuentes:
 - [Plan de figuras y tablas del paper](docs/guias/PLAN_FIGURAS_TABLAS_PAPER.md)
 - [Guía de formato Revista 3i](docs/guias/FORMATO_PAPER_REVISTA_3I.md)
 
-**La plantilla Revista 3i ya fue entregada y analizada**. El paper definitivo en Word todavía está pendiente de maquetación y referencias bibliográficas verificadas. No incorporar puntuaciones humanas que no fueron registradas, no afirmar consentimientos inexistentes ni autorizar despliegue público.
+**Manuscrito académico:** consulta la [versión Word y PDF versionada](docs/manuscrito/) y sus [notas editoriales](docs/manuscrito/README.md). La versión del repositorio corresponde a la revisión editorial del 24 de noviembre de 2026; las correcciones posteriores del PDF se mantienen fuera del repositorio hasta su incorporación explícita. No incorporar puntuaciones humanas que no fueron registradas, no afirmar consentimientos inexistentes ni autorizar despliegue público.

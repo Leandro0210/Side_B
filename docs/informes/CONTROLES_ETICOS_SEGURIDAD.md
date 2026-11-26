@@ -26,7 +26,7 @@ Las decisiones son **demostrativas**: no afectan plataformas musicales ni determ
 | Validación de entradas | Se comprueba elegibilidad, decisiones admitidas, formato de alias, justificación y rechazo de fórmulas CSV | No es una validación semántica humana del motivo |
 | Integridad del registro | Eventos secuenciales con `previous_mac` y `entry_mac` HMAC-SHA256, verificados antes de aplicar bloqueos | No detecta borrado completo ni truncado final sin respaldo externo; quien conoce la clave podría recomputar firmas |
 | Guardado consistente | Se escribe archivo temporal, se sincroniza y se reemplaza por ruta definitiva | Asegura consistencia en un solo proceso local, no bloqueo interprocesos |
-| Separación de fuentes | Los experimentos, el dataset, P01 real y P02–P05 sintéticos no se sobrescriben | Valoraciones reales futuras requieren consentimiento y política de conservación |
+| Separación de fuentes | Los experimentos y el dataset se conservan separados de la evidencia de recepción y de las decisiones de supervisión | Valoraciones reales futuras requieren consentimiento y política de conservación |
 | Sin exposición pública | Gradio se vincula a 127.0.0.1 con `share=False` | No protege si el equipo está comprometido |
 
 ## 4. Pruebas reproducibles

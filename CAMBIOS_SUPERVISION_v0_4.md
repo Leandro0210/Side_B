@@ -4,7 +4,7 @@
 
 - 576 grabaciones, 72 artistas, políticas A/B/C/D, resultados de ablación y robustez.
 - Las tres pestañas sencillas de Gradio.
-- Separación entre P01 (humana real) y P02–P05 (simulaciones).
+- Separación entre los datos experimentales, la evidencia de recepción humana y las decisiones de supervisión; la evidencia pública vigente de recepción se limita a nueve relatos agregados.
 
 ## Añadimos
 
@@ -34,4 +34,4 @@
 - `verificar_evidencias.py` confirmó 7/7 archivos originales sin modificación.
 - Apertura HTTP de Gradio en `127.0.0.1:7860` verificada localmente.
 
-El formato paper queda para la etapa final, siguiendo la plantilla que proporcionará el docente.
+Este registro describe la etapa v0.4; el manuscrito posterior se encuentra en `docs/manuscrito/`.
